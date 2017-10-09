@@ -38,5 +38,34 @@
       title: 'Manage Social Accounts',
       state: 'settings.accounts'
     });
+
+    menuService.addMenuItem('topbar', {
+      title: 'About Us',
+      state: 'aboutus',
+      roles: ['*']
+    });
+
+        menuService.addMenuItem('topbar', {
+      title: 'Projects',
+      state: 'projects',
+      roles: ['*']
+    });
+
+            menuService.addMenuItem('topbar', {
+      title: 'Training',
+      state: 'training',
+      roles: ['*']
+    });
+
+                menuService.addMenuItem('topbar', {
+      title: 'Resources',
+      state: 'resources',
+      roles: ['*']
+    });
+                    menuService.addMenuItem('topbar', {
+      title: 'Contact Us',
+      state: 'contactus',
+      roles: ['*']
+    });
   }
 }());
