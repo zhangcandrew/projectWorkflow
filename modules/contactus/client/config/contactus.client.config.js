@@ -11,8 +11,7 @@
     // Set top bar menu items
     menuService.addMenuItem('topbar', {
       title: 'Contact Us',
-      state: 'contactus',
-      type: 'dropdown',
+      state: 'contactus.list',
       roles: ['*']
     });
 
