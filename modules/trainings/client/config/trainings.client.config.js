@@ -11,8 +11,7 @@
     // Set top bar menu items
     menuService.addMenuItem('topbar', {
       title: 'Trainings',
-      state: 'trainings',
-      type: 'dropdown',
+      state: 'trainings.list',
       roles: ['*']
     });
 

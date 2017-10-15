@@ -11,8 +11,7 @@
     // Set top bar menu items
     menuService.addMenuItem('topbar', {
       title: 'Resources',
-      state: 'resources',
-      type: 'dropdown',
+      state: 'resources.list',
       roles: ['*']
     });
 

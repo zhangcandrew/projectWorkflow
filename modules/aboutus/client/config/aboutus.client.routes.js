@@ -20,7 +20,7 @@
         controller: 'AboutusListController',
         controllerAs: 'vm',
         data: {
-          pageTitle: 'About Us List'
+          pageTitle: 'About Us'
         }
       })
       .state('aboutus.create', {
