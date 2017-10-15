@@ -1,689 +1,84 @@
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase no-indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head>
-  <meta charset="utf-8">
-    <link rel="dns-prefetch" href="//ajax.googleapis.com">
-<link rel="dns-prefetch" href="//platform-api.sharethis.com">
-<link rel="dns-prefetch" href="//s.w.org">
-<link rel="alternate" type="application/rss+xml" title="University of Florida Transportation Institute » Feed" href="http://www.transportation.institute.ufl.edu/feed/">
-<link rel="alternate" type="application/rss+xml" title="University of Florida Transportation Institute » Comments Feed" href="http://www.transportation.institute.ufl.edu/comments/feed/">
-<link rel="alternate" type="text/calendar" title="University of Florida Transportation Institute » iCal Feed" href="http://www.transportation.institute.ufl.edu/calendar-2/?ical=1">
-    <script async="" src="https://google-analytics.com/analytics.js"></script><script id="twitter-wjs" src="//platform.twitter.com/widgets.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//rum-static.pingdom.net/prum.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script type="text/javascript">
-      window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.transportation.institute.ufl.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
-      !function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-    </script><script src="http://www.transportation.institute.ufl.edu/wp-includes/js/wp-emoji-release.min.js?ver=4.8.2" type="text/javascript" defer=""></script>
-    <style type="text/css">
-img.wp-smiley,
-img.emoji {
-  display: inline !important;
-  border: none !important;
-  box-shadow: none !important;
-  height: 1em !important;
-  width: 1em !important;
-  margin: 0 .07em !important;
-  vertical-align: -0.1em !important;
-  background: none !important;
-  padding: 0 !important;
-}
-</style>
-<link rel="stylesheet" id="accordioncssfree-css" href="http://www.transportation.institute.ufl.edu/wp-content/plugins/sp-faq/css/jquery.accordion.css?ver=3.2.5" type="text/css" media="all">
-<link rel="stylesheet" id="Rich_Web_Tabs-css" href="http://www.transportation.institute.ufl.edu/wp-content/plugins/tabbed/Style/Tabs-Rich-Web-Widget.css?ver=4.8.2" type="text/css" media="all">
-<link rel="stylesheet" id="fontawesome-css-css" href="http://www.transportation.institute.ufl.edu/wp-content/plugins/tabbed/Style/richwebicons.css?ver=4.8.2" type="text/css" media="all">
-<link rel="stylesheet" id="PI_stt_front-css" href="http://www.transportation.institute.ufl.edu/wp-content/plugins/simple-twitter-tweets/css/stt.min.css?ver=4.8.2" type="text/css" media="all">
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/modernizr-1.7.min.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/plugins/sp-faq/js/jquery.accordion.js?ver=3.2.5"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-blind.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-bounce.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-clip.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-drop.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-explode.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-fade.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-fold.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-highlight.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-pulsate.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-size.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-scale.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-shake.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-slide.min.js?ver=1.11.4"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/jquery/ui/effect-puff.min.js?ver=1.11.4"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var object = {"ajaxurl":"http:\/\/www.transportation.institute.ufl.edu\/wp-admin\/admin-ajax.php"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/plugins/tabbed/Scripts/Tabs-Rich-Web-Widget.js?ver=4.8.2"></script>
-<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#product=ga"></script>
-<link rel="https://api.w.org/" href="http://www.transportation.institute.ufl.edu/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.transportation.institute.ufl.edu/xmlrpc.php?rsd">
-<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="http://www.transportation.institute.ufl.edu"><link rel="https://theeventscalendar.com/" href="http://www.transportation.institute.ufl.edu/wp-json/tribe/events/v1/"><title>University of Florida Transportation Institute » University of Florida</title>
-<link rel="stylesheet" type="text/css" media="print" href="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/css/print.css">
-<link rel="stylesheet" href="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/style.css?20111223">
-<link rel="stylesheet" href="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/css/mega-menu.css">
-<link rel="stylesheet" href="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/css/prettyPhoto.css">
-<style type="text/css">#slideshow .half-image-feature h3 {
-font-size: 2em;
-}
-nav.main_menu .sub-menu .sub-menu {
-  left: 200px !important;
-  right: auto !important;
-}</style>
-<link rel="apple-touch-icon" href="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/apple-touch-icon.png">
-<link rel="shortcut icon" href="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/favicon.ico">
-<meta name="description" content="">
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-45366324-1']);
-_gaq.push(['_addOrganic','search.ufl.edu','query']);
-_gaq.push(['_trackPageview']);
-_gaq.push(['_trackPageLoadTime']);
-
-(function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-            
-jQuery(document).ready(function($) {
-    $('a').click(function() {
-        var href = $(this).attr('href');
-        if (href.match(/^http/) && !href.match(document.domain)) {
-            _gaq.push( [ '_trackEvent', 'Outbound Links', 'Click', href ] );
-        }
-
-        if (href.match(/\.(doc|docx|pdf|ppt|pptx|xls|xlsx|zip)$/)) {
-            _gaq.push( [ '_trackEvent', 'Downloads', 'Download', href ] );
-        }
-    });
-
-    $('#institutional-nav a').click(function() {
-        _gaq.push( [ '_trackEvent', 'Global Header', 'Click', $(this).attr('href') ] );
-    });
-
-    $('#institutional-footer a').click(function() {
-        _gaq.push( [ '_trackEvent', 'Global Footer', 'Click', $(this).attr('href') ] );
-    });
-});
-</script>
-    <style type="text/css" id="wp-custom-css">
-      /*
-You can add your own CSS here.
-
-Click the help icon above to learn more.
-*/
-#slideshow .half-image-feature h3 {
-font-size: 22px;
-}
-#nav.main_menu .sub-menu .sub-menu {
-  left: 200px !important;
-  right: auto !important;
-}
-ul li:hover ul {
-display:block;
-}   </style>
-  
-
-<script>
-  var _prum = [['id', '5502ece7abe53db84512e2be'],
-               ['mark', 'firstbyte', (new Date()).getTime()]];
-  (function() {
-      var s = document.getElementsByTagName('script')[0]
-        , p = document.createElement('script');
-      p.async = 'async';
-      p.src = '//rum-static.pingdom.net/prum.min.js';
-      s.parentNode.insertBefore(p, s);
-  })();
-</script>
-<script type="text/javascript" charset="utf-8" async="" src="https://platform.twitter.com/js/button.b5276da659efda6dff11c91b8160a531.js"></script></head>
-
-<body class="">
-
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-91079564-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<class="home blog="" tribe-no-js"="">
-  <div id="full-modal"></div>
-    <ul class="screen-reader-text">
-      <li><a href="http://assistive.usablenet.com/tt/http://www.transportation.institute.ufl.edu" accesskey="t" title="Text-only version of this website">Text-only version of this website</a></li>
-      <li><a href="#content" accesskey="s" title="Skip navigation">Skip navigation</a></li>
-      <li><a href="http://www.transportation.institute.ufl.edu" accesskey="1" title="Home page">Home page</a></li>
-      <li><a href="http://www.transportation.institute.ufl.edu/#secondary" accesskey="2" title="what's new">What's new</a></li>
-      <li><a href="#search" accesskey="4" title="Search">Search</a></li>
-      <li><a id="contact-webmaster-srt" accesskey="6" href="mailto:elaine.khoo@essie.ufl.edu">Contact Webmaster</a></li>      <li><a href="#footer-links" accesskey="8" title="Website policies">Website policies</a></li>
-      <li><a href="http://www.ufl.edu/disability/" accesskey="0" title="Disability services">Disability services</a></li>
+<section>
+  <div class="jumbotron text-center">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+        <img alt="MEAN.JS" class="img-responsive text-center" src="/modules/core/client/img/brand/logo.png" />
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <p class="lead">
+        Open-Source Full-Stack Solution For MEAN Applications
+      </p>
+    </div>
+    <div class="row">
+      <p>
+        <a class="btn btn-primary btn-lg" href="http://meanjs.org" target="_blank">Learn more</a>
+      </p>
+    </div>
+  </div>
+  <div>
+    <h2>Congrats! You've configured and run the sample application.</h2>
+    <p>MEAN.JS is a web application boilerplate, which means you should start changing everything :-)</p>
+    <p>This sample application tracks users and articles.</p>
+    <ul>
+      <li>
+        Click
+        <em>Sign Up</em> to get started.
+      </li>
+      <li>
+        Configure your app to work with your social accounts, by editing the
+        <em>/config/env/*.js</em> files.
+      </li>
+      <li>
+        Edit your users module.
+      </li>
+      <li>
+        Add new CRUD modules.
+      </li>
+      <li>
+        Have fun...
+      </li>
     </ul>
-  
-  <!-- <nav id="institutional-nav" class="white" role="navigation">
-  <ul id="top" class="container">
-      <li id="inst-home"><a href="http://www.ufl.edu/"><img src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/images/uf_inst_logo.png" alt="UF Home" title="UF Home"></a></li>
-        <li class="social">
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <h2><strong>M</strong>ongoDB</h2>
+      <p><a target="_blank" href="http://mongodb.org/">MongoDB</a> is a NoSQL database. MongoDB's <a target="_blank" href="http://docs.mongodb.org/manual/">great manual</a> is the place to get started with NoSQL and MongoDB.</p>
+    </div>
+    <div class="col-md-3">
+      <h2><strong>E</strong>xpress</h2>
+      <p><a target="_blank" href="http://expressjs.com/"> Express</a> is a NodeJS server-side application web framework. Check out <a target="_blank" href="http://expressjs.com/4x/api.html">The ExpressJS API reference for more information</a> or <a target="_blank" href="http://stackoverflow.com/questions/8144214/learning-express-for-node-js">StackOverflow</a> for more info.</p>
+    </div>
+    <div class="col-md-3">
+      <h2><strong>A</strong>ngularJS</h2>
+      <p><a target="_blank" href="http://angularjs.org/">AngularJS</a> is client-side web application framework. The <a target="_blank" href="http://www.thinkster.io/">Thinkster Popular Guide</a> and <a target="_blank" href="https://egghead.io/">Egghead Videos</a> are great resources.</p>
+    </div>
+    <div class="col-md-3">
+      <h2><strong>N</strong>ode.js</h2>
+      <p><a target="_blank" href="http://nodejs.org/">Node.js</a> is a JavaScript run-time, popular for being a web server platform. Node's website and this <a target="_blank" href="http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js">stackOverflow thread</a> offer excellent starting points to get to grasps with node.</p>
+    </div>
+  </div>
+  <div class="well">
+    <h2>MEAN.JS Documentation</h2>
+    <p>
+      Once you're familiar with the foundation technology, check out the MEAN.JS Documentation:
       <ul>
-        <li><a href="https://www.facebook.com/UFTransportation/" title="Facebook" class="facebook ir">Facebook</a></li>
-        <li><a href="https://twitter.com/_UFTI" title="Twitter" class="twitter ir">Twitter</a></li>
-        <li><a href="https://www.youtube.com/channel/UCWEOIBqjKAUG5ZCPQ1fQO9A/videos" title="Youtube" class="youtube ir">Youtube</a></li>
-        <li><a href="https://www.linkedin.com/groups/6748369" title="LinkedIn" class="linkedin ir">LinkedIn</a></li>
-        <li><a href="https://instagram.com/ufwertheim/" title="Instagram" class="instagram ir">Instagram</a></li>
-        <li><a href="https://www.flickr.com/photos/gatorengineering/" title="Flickr" class="flickr ir">Flickr</a></li>
+        <li><a target="_blank" href="http://meanjs.org/docs.html">MEAN.JS Documentation</a>
+        </li>
+        <!-- <li><a target="_blank" href="http://meanjs.org/generator.html">Yeoman Generator</a>
+        </li> -->
+        <li><a target="_blank" href="http://meanjs.org/modules.html">Modules</a>
+        </li>
+        <li><a target="_blank" href="http://meanjs.org/changelog.html">Changelog</a>
+        </li>
+        <li><a target="_blank" href="http://meanjs.org/community.html">Community</a>
+        </li>
+        <li><a target="_blank" href="http://blog.meanjs.org">Blog</a>
+        </li>
       </ul>
-    </li>
-  </ul> 
-</nav> -->
- <!-- end #institutional-nav -->
-
-  <header role="banner">
-    <div class="container">
-    
-    <!-- begin website title logic -->
-      <div id="header-title" class="alpha omega span-15"><a href="" title="University of Florida Transportation Institute"><h3 id="header-parent-organization-logo" class="ir uf">University of Florida</h3><div id="header-title-text-right" class="alpha omega  uf"><h1 id="header-title-text" class="palatino">University <em>of</em> Florida Transportation Safety Center</h1></div></a></div>   <!-- end website title logic -->
-  
-<!--     <div id="header-search-wrap">
-            <div id="searchform-wrap">
-                  <form method="get" id="searchform" action="http://search.ufl.edu/search" role="search">
-        <input type="hidden" name="source" id="source" value="web">
-                <input type="text" value="Search UF Web" id="header-search-field" name="query" rel="Search UF Web">
-        <input type="image" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/images/header-search-btn.png" id="header-search-btn" alt="Search Button" name="sa">
-      </form>
-            </div>
-    </div> --><!-- end header-search-wrap -->
-    
-    <a id="header-actionitem" href="">Login or Sign Up</a>   
-    </div><!-- end header .container -->
-  </header>
-     
-   <nav id="primary-nav" class="white" role="navigation"><ul class="container"><li id="home" class="ir"><a href="home.client.view.html">Home</a></li><li id="menu-item-5468" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-5468"><a href="aboutus.client.view.html">About Us</a>
-<!-- <div class="sub" style="opacity: 0; display: none;"><ul class="children">
-  <li id="menu-item-5633" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5633" style="clear: both;"><a href="http://www.transportation.institute.ufl.edu/overview/about-ufti/">About UFTI</a></li>
-  <li id="menu-item-5469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5469"><a href="http://www.transportation.institute.ufl.edu/overview/faculty-staff/">Faculty &amp; Staff</a></li>
-  <li id="menu-item-5470" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5470"><a href="http://www.transportation.institute.ufl.edu/overview/advisory-board/">UFTI External Advisory Board</a></li>
-  <li id="menu-item-5471" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5471"><a href="http://www.transportation.institute.ufl.edu/overview/centers/">UFTI Centers</a></li>
-  <li id="menu-item-5472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5472" style="clear: both;"><a href="http://www.transportation.institute.ufl.edu/overview/facilities/">Facilities</a></li>
-  <li id="menu-item-5473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5473"><a href="http://www.transportation.institute.ufl.edu/overview/position-openings/">Position Openings</a></li>
-</ul></div> -->
-</li>
-<li id="menu-item-5519" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-5519"><a href="">Projects</a>
-<!-- <div class="sub" style="opacity: 0;"><ul class="children">
-  <li id="menu-item-10277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-10277"><a href="http://www.transportation.institute.ufl.edu/research-2/istreet/">I-STREET</a>
-  <ul class="subchildren">
-    <li id="menu-item-10303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10303"><a href="http://www.transportation.institute.ufl.edu/research-2/istreet/partnerships-and-industry-involvement/">Partnerships and Industry Involvement</a></li>
-    <li id="menu-item-10305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10305"><a href="http://www.transportation.institute.ufl.edu/research-2/istreet/infrastructure-and-projects/">Infrastructure and Projects</a></li>
-    <li id="menu-item-10307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10307"><a href="http://www.transportation.institute.ufl.edu/research-2/istreet/faq/">FAQ</a></li>
-    <li id="menu-item-10301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10301"><a href="http://www.transportation.institute.ufl.edu/research-2/istreet/i-street-contact-us/">I-STREET Contact Us</a></li>
-  </ul>
-</li>
-
-</li>
-</ul></div> -->
-</li>
-<li id="menu-item-5488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-5488"><a href="">Training</a>
-<!-- <div class="sub" style="opacity: 0;"><ul class="children">
-  <li id="menu-item-5490" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5490"><a href="http://www.transportation.institute.ufl.edu/training-continuing-eduction/undergraduate-graduate-programs/">Undergraduate &amp; Graduate Programs</a></li>
-  <li id="menu-item-6341" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6341"><a href="http://www.transportation.institute.ufl.edu/training-continuing-eduction/student-resources/">Student Resources</a></li>
-  <li id="menu-item-5491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5491"><a href="http://www.transportation.institute.ufl.edu/training-continuing-eduction/student-chapters/">Student Chapters</a></li>
-  <li id="menu-item-5489" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5489"><a href="http://www.transportation.institute.ufl.edu/training-continuing-eduction/internships-for-undergraduate-students/">Internships for Undergraduate Students</a></li>
-  <li id="menu-item-5492" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5492"><a href="http://www.transportation.institute.ufl.edu/training-continuing-eduction/fellowships/">Fellowships</a></li>
-  <li id="menu-item-5493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5493"><a href="http://www.transportation.institute.ufl.edu/training-continuing-eduction/edge/">Distance Learning</a></li>
-  <li id="menu-item-5494" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5494"><a href="http://www.transportation.institute.ufl.edu/training-continuing-eduction/k-12-programs/">K-12 Programs</a></li>
-</ul></div> -->
-</li>
-<li id="menu-item-5495" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-5495"><a href="">Resources</a>
-<!-- <div class="sub" style="opacity: 0; display: none;"><ul class="children">
-  <li id="menu-item-5622" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5622" style="clear: both;"><a href="http://www.transportation.institute.ufl.edu/category/news/tech-transfer/">Technology Transfer News</a></li>
-  <li id="menu-item-5497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5497"><a href="http://www.transportation.institute.ufl.edu/trainingprofessional-development/traffic/">Traffic Courses</a></li>
-  <li id="menu-item-5514" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5514"><a href="http://www.transportation.institute.ufl.edu/trainingprofessional-development/safety/">Safety Courses</a></li>
-  <li id="menu-item-9669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children parent menu-item-9669"><a href="http://www.transportation.institute.ufl.edu/trainingprofessional-development/committees/">Committees</a>
-  <ul class="subchildren">
-    <li id="menu-item-9169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9169"><a href="http://www.transportation.institute.ufl.edu/trainingprofessional-development/committees/signal-timing-subcommittee/">Signal Timing Subcommittee</a></li>
-  </ul>
-</li>
-</ul></div> -->
-</li>
-<li id="menu-item-5509" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children parent menu-item-5509"><a href="">Contact Us</a>
-<!-- <div class="sub" style="opacity: 0;"><ul class="children">
-  <li id="menu-item-5499" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5499"><a href="http://www.transportation.institute.ufl.edu/publications/newsletters/">Newsletters</a></li>
-  <li id="menu-item-5500" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5500"><a href="http://www.transportation.institute.ufl.edu/publications/annual-reports/">Annual Reports</a></li>
-  <li id="menu-item-9005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9005"><a href="http://www.transportation.institute.ufl.edu/publications/ufti-in-the-news/">UFTI in the News</a></li>
-  <li id="menu-item-5513" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5513"><a href="http://www.transportation.institute.ufl.edu/category/news/community/">In the Community</a></li>
-  <li id="menu-item-5502" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5502"><a href="http://www.transportation.institute.ufl.edu/category/awards/">Awards</a></li>
-  <li id="menu-item-5501" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5501"><a href="http://www.transportation.institute.ufl.edu/category/events/">Events Archive</a></li>
-  <li id="menu-item-10423" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10423"><a href="http://www.transportation.institute.ufl.edu/calendar-2/">Calendar</a></li>
-</ul></div>
-</li> -->
-</ul></nav><!-- end #primary-nav -->  
-  <div id="content" class="visuallyhidden"></div> <!-- on homepage for accessibility -->
-  
-      <div id="feature-wrap" class="">
-      <div id="feature" class="container" role="main">
-      
-      <!-- Story Stacker / Slider -->
-        <script type="text/javascript">var sliderSpeed = 7000</script> 
-<div id="slideshow-wrap">
-<div id="slideshow">
-    <div id="slideshow-reel" style="left: -930px;">
-                        
-                  
-        <!-- Half-Size Image Output -->
-          <!-- end .slide -->
-                  
-            
-                        
-                  
-        <!-- Half-Size Image Output -->
-          <!-- end .slide -->
-                  
-            
-                        
-                  
-        <!-- Half-Size Image Output -->
-          <!-- end .slide -->
-                  
-            
-                        
-                  
-        <!-- Half-Size Image Output -->
-          <div class="slide slide-3 half-image-feature  ">
-                                <a href="https://github.com/At0micSurprise/random/blob/master/County%20Road%20Safety%20Study.pdf">                 <img width="450" height="305" src="https://github.com/At0micSurprise/random/blob/master/maps.png?raw=true" class="attachment-half-width-thumb size-half-width-thumb wp-post-image" alt="">                 </a>                  <div class="excerpt" style="display: none;">
-          <h3><a href="https://github.com/At0micSurprise/random/blob/master/County%20Road%20Safety%20Study.pdf">Gadsden County Road Saftey Study</a></h3>
-          <p>Description of Gadsen County info.</p>
-                        <a class="custom-button" href="https://github.com/At0micSurprise/random/blob/master/County%20Road%20Safety%20Study.pdf">
-                Read More             </a>
-                      </div><!-- end .excerpt -->
-          </div><div class="slide slide-4 half-image-feature  ">
-                                <a href="https://github.com/At0micSurprise/random/blob/master/Site%20Analysis%20And%20Justification%20Report_-1.pdf">                  <img width="450" height="305" src="http://www.hendryfla.net/government/county_commissioners/docs/COM_DISTRICT_2014_2.jpg" class="attachment-half-width-thumb size-half-width-thumb wp-post-image" alt="">                 </a>                  <div class="excerpt" style="display: none;">
-          <h3><a href="https://github.com/At0micSurprise/random/blob/master/Site%20Analysis%20And%20Justification%20Report_-1.pdf">Site Analysis And Justification Report</a></h3>
-          <p>Description of Hendry County info.</p>
-                        <a class="custom-button" href="https://github.com/At0micSurprise/random/blob/master/Site%20Analysis%20And%20Justification%20Report_-1.pdf">
-                Read More             </a>
-                      </div><!-- end .excerpt -->
-          </div><div class="slide slide-5 half-image-feature  ">
-                                <a href="https://raw.githubusercontent.com/At0micSurprise/random/master/Project%20Description.png">                 <img width="450" height="305" src="http://www.howderfamily.com/graphics/counties/florida.png" alt="">                  </a>                  <div class="excerpt" style="display: none;">
-          <h3><a href="https://raw.githubusercontent.com/At0micSurprise/random/master/Project%20Description.png">Project Description</a></h3>
-          <p>More about the project here.</p>
-                        <a class="custom-button" href="https://github.com/At0micSurprise/random">
-                Read More             </a>
-                      </div><!-- end .excerpt -->
-          </div><div class="slide slide-1 half-image-feature  ">
-                                <a href="http://parking.ufl.edu/">                 <img width="450" height="305" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Alachua_County_Florida_Incorporated_and_Unincorporated_areas_Gainesville_Highlighted.svg/2000px-Alachua_County_Florida_Incorporated_and_Unincorporated_areas_Gainesville_Highlighted.svg.png" class="attachment-half-width-thumb size-half-width-thumb wp-post-image" alt="">                 </a>                  <div class="excerpt" style="display: none;">
-          <h3><a href="http://parking.ufl.edu/">Link to the UF transportation services.</a></h3>
-          <p></p>
-                        <a class="custom-button" href="http://parking.ufl.edu/">
-                Click here for link.             </a>
-                      </div><!-- end .excerpt -->
-          </div><div class="slide slide-2 half-image-feature  ">
-                                <a href="http://www.transportation.institute.ufl.edu/">                 <img width="450" height="305" src="https://i.ytimg.com/vi/Sr4zllx6ue0/maxresdefault.jpg" class="attachment-half-width-thumb size-half-width-thumb wp-post-image" alt="">                  </a>                  <div class="excerpt" style="display: none;">
-          <h3><a href="http://www.transportation.institute.ufl.edu/">Link to original T2 website</a></h3>
-          <p></p>
-                        <a class="custom-button" href="http://www.transportation.institute.ufl.edu/">
-                Click me for link!             </a>
-                      </div><!-- end .excerpt -->
-          </div><!-- end .slide -->
-                  
-            
-                      
-        <!-- Half-Size Image Output -->
-          <!-- end .slide -->
-                  
-            
-                
-    </div><!-- end #slideshow-reel -->
-    
-    
-          <a href="#" id="slideshow-left" class="slideshow-arrow"></a>
-      <a href="#" id="slideshow-right" class="slideshow-arrow"></a>
-      
-            
-</div><!-- end #slideshow -->
-</div><!-- end #slideshow-wrap -->      <!-- end Story Stacker / Slider -->
-      
-      </div><!-- end #feature -->
-    </div><!-- end #feature-wrap -->
-    
-  
-  <div id="secondary" class="homepage_layout_white"><div class="container"><section class="container"><div class="widget-2 widget home_widget"><h3><a href="">University of Florida Transportation Safety Center (TSC)</a><!-- <a href="http://www.transportation.institute.ufl.edu/feed/" title="Subscribe to RSS feed"><img class="rss-icon" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/images/rss.png" alt="Subscribe to RSS Feed"></a> --> </h3><div id="recent-posts" class="news-announcements"><div class="item"><h4><a href="">TSC Introduction and Welcome Goes Here</a></h4><p>Give more and more detailed information here that you would like to include on the page as a welcome or intro to the Transportation Safety Center[…] more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here more and more detailed information here </p></div></div><!-- <div id="recent-posts" class="news-announcements"><div class="item"><h4><a href="http://www.transportation.institute.ufl.edu/2017/06/ufti-affiliate-evaluates-asphalt-pavement-interface-conditions-for-enhanced-bond-performance/">UFTI Affiliate Evaluates Asphalt Pavement Interface Conditions for Enhanced Bond Performance</a></h4><p>Dr. Reynaldo Roque, a professor from the University of Florida Department of Civil &amp; Coastal Engineering, along with his research team, conducted a study to understand interface debonding and near-surface […]</p></div></div><div id="recent-posts" class="news-announcements"><div class="item"><h4><a href="http://www.transportation.institute.ufl.edu/2017/05/ufti-participates-in-fdot-research-program-peer-exchange-2/">UFTI Participates in FDOT Research Program Peer Exchange</a></h4><p>FDOT held a peer exchange, which is a review of a state DOT’s Research, Development, and Technology program by representatives of other state DOTs, federal transportation agencies, academic institutions, the […]</p></div></div><div id="recent-posts" class="news-announcements"><div class="item"><h4><a href="http://www.transportation.institute.ufl.edu/2017/05/ufti-offers-workshop-on-dsrc-and-other-transportation-communication-options/">UFTI Offers Workshop on DSRC and Other Transportation Communication Options</a></h4><p>A panel of experts in the field of Intelligent Transportation Systems (ITS) presented different aspects of Vehicle-to-Infrastructure or V2X&nbsp;connectivity on May 3, 2017, at the University of Florida. This workshop […]</p>--></div></div></div> </section><!-- <section class="span-8 omega">  <div class="widget-2 widget home_widget"><div class="widget_embed_pages"><h3>UFTI in the News</h3><h4>The Conversation</h4>
-<p><a href="https://theconversation.com/governments-car-companies-must-resolve-their-competing-goals-for-self-driving-cars-84178">Governments, car companies must resolve their competing goals for&nbsp;<span class="nobr">self-driving</span>&nbsp;cars</a></p>
-<h4>San Francisco Chronicle</h4>
-<p><a href="http://www.sfchronicle.com/news/article/Governments-car-companies-must-resolve-their-12248565.php">Governments, car companies must resolve their compete foals for self-driving cars</a></p>
-<h4>UF News</h4>
-<p><a href="http://news.ufl.edu/articles/2017/04/transportation-partnership-to-create-smart-testbed-for-advanced-technologies.php">"Transportation Partnership to Create ‘Smart Testbed’ for Advanced Technologies"</a></p>
-<h4>Gainesville Sun</h4>
-<p><a href="http://www.gainesville.com/opinion/20170427/editorial-uf-driving-toward-city-improvements">"Editorial: UF driving toward city improvements"</a></p>
-<p><a href="http://www.gainesville.com/news/20170425/city-uf-plan-for-driverless-cars-on-city-streets">"City, UF plan for driverless cars on city streets"</a></p>
-<h4>WUFT</h4>
-<p><a href="https://www.wuft.org/news/2017/04/28/uf-gainesville-announce-partnership-to-test-self-driving-vehicles/">"UF, Gainesville Announce Partnership To Test Self-Driving Vehicles"</a></p>
-<h4>CBS-4 Gainesville</h4>
-<p>"<a href="http://mycbs4.com/news/local/driverless-vehicles-continue-testing-in-gainesville">Driverless vehicles continue testing in Gainesville</a>"</p>
-<h4>Alligator</h4>
-<p>"<a href="http://www.alligator.org/news/article_345cd07e-928b-11e7-952d-b723ef9c15c0.html">RTS driverless buses in works"</a></p>
-<h4>Florida Trend</h4>
-<p><a href="http://www.floridatrend.com/article/21982/floridas-high-tech-economy-matures">"Florida's high-tech economy matures"</a></p>
-<h4>Traffic Technology Today</h4>
-<p><a href="http://www.traffictechnologytoday.com/news.php?NewsID=85168">"Partnership to create 'smart testbed' for advanced transportation technologies in Florida"</a></p>
-<p>&nbsp;</p>
-</div></div></section> --><!-- <section class="span-8 omega">  --> <!-- <div class="widget-2 widget home_widget"><h3>Recent Tweets</h3>
-      <ul class="tweets">
-                              <li class="avatar" style="margin-left:35px">
-                <img style="margin-left:-35px" width="30px" height="30px" src="http://pbs.twimg.com/profile_images/885891636538081280/dxxMolVS_normal.jpg" alt="Tweet Avatar" class="a-corn">               Dr. Elefteriadou <a href="http://twitter.com/ElefterLily" target="_blank" rel="nofollow">@ElefterLily</a> wrote a piece on <a href="http://twitter.com/search?q=%23self-" target="_blank" rel="nofollow">#self-</a><a href="http://twitter.com/search?q=%23driving" target="_blank" rel="nofollow">#driving</a> <a href="http://twitter.com/search?q=%23cars" target="_blank" rel="nofollow">#cars</a> featured in the <a href="http://twitter.com/sfchronicle" target="_blank" rel="nofollow">@sfchronicle</a>! Read it here <a href="https://t.co/6hgvBcY5J3" target="_blank" rel="nofollow">https://t.co/6hgvBcY5J3</a>                  <span class="stt-em">
-            <a href="http://twitter.com/_UFTI/status/915203303432179712" target="_blank">
-              16 mins             </a>
-                  </span>
-
-            
-              </li>
-                        <li class="avatar" style="margin-left:35px">
-                <img style="margin-left:-35px" width="30px" height="30px" src="http://pbs.twimg.com/profile_images/885891636538081280/dxxMolVS_normal.jpg" alt="Tweet Avatar" class="a-corn">               Did you read T2's quarterly <a href="http://twitter.com/search?q=%23newsletter" target="_blank" rel="nofollow">#newsletter</a> from last month? If not, read it now! <a href="https://t.co/KPw91wQm2z" target="_blank" rel="nofollow">https://t.co/KPw91wQm2z</a> <a href="https://t.co/ePL6Aj4Xn1" target="_blank" rel="nofollow">https://t.co/ePL6Aj4Xn1</a>                  <span class="stt-em">
-            <a href="http://twitter.com/_UFTI/status/913418397655998464" target="_blank">
-              5d              </a>
-                  </span>
-
-            
-              </li>
-                        <li class="avatar" style="margin-left:35px">
-                <img style="margin-left:-35px" width="30px" height="30px" src="http://pbs.twimg.com/profile_images/885891636538081280/dxxMolVS_normal.jpg" alt="Tweet Avatar" class="a-corn">               Don't forget to register for the STRIDE UTC <a href="http://twitter.com/search?q=%23Conference" target="_blank" rel="nofollow">#Conference</a>! Click here to do it now: <a href="https://t.co/WjgpElIyIN…" target="_blank" rel="nofollow">https://t.co/WjgpElIyIN…</a> <a href="https://t.co/UCRkxG13i1" target="_blank" rel="nofollow">https://t.co/UCRkxG13i1</a>                  <span class="stt-em">
-            <a href="http://twitter.com/_UFTI/status/912678528856051712" target="_blank">
-              7d              </a>
-                  </span>
-
-            
-              </li>
-                        <li class="avatar" style="margin-left:35px">
-                <img style="margin-left:-35px" width="30px" height="30px" src="http://pbs.twimg.com/profile_images/885891636538081280/dxxMolVS_normal.jpg" alt="Tweet Avatar" class="a-corn">               RT <a href="http://twitter.com/UFWertheim" target="_blank" rel="nofollow">@UFWertheim</a>: Environmental, civil &amp; coastal engineering students: Meet recruiters at the <a href="http://twitter.com/UFESSIE" target="_blank" rel="nofollow">@UFESSIE</a> Evening with Industry event -… <a href="https://t.co/CzI4UQW9Ty" target="_blank" rel="nofollow">https://t.co/CzI4UQW9Ty</a>                 <span class="stt-em">
-            <a href="http://twitter.com/_UFTI/status/912386237025193984" target="_blank">
-              1 week              </a>
-                  </span>
-
-            
-              </li>
-                        <li class="avatar" style="margin-left:35px">
-                <img style="margin-left:-35px" width="30px" height="30px" src="http://pbs.twimg.com/profile_images/885891636538081280/dxxMolVS_normal.jpg" alt="Tweet Avatar" class="a-corn">               Have you heard? Hyperloop One's ultra-fast, high-speed rail selected Orlando as finalist! Read here: <a href="https://t.co/r94dSdQ6cV" target="_blank" rel="nofollow">https://t.co/r94dSdQ6cV</a>                 <span class="stt-em">
-            <a href="http://twitter.com/_UFTI/status/910879093956194304" target="_blank">
-              2 weeks             </a>
-                  </span>
-
-            
-              </li>
-                        <li class="avatar" style="margin-left:35px">
-                <img style="margin-left:-35px" width="30px" height="30px" src="http://pbs.twimg.com/profile_images/885891636538081280/dxxMolVS_normal.jpg" alt="Tweet Avatar" class="a-corn">               RT <a href="http://twitter.com/gator_ite" target="_blank" rel="nofollow">@gator_ite</a>: Come on over to Weil 513 tomorrow at 5:30 PM for our first GBM!! <a href="http://twitter.com/search?q=%23Gatorite" target="_blank" rel="nofollow">#Gatorite</a> <a href="http://twitter.com/search?q=%23gogators" target="_blank" rel="nofollow">#gogators</a> <a href="http://twitter.com/search?q=%23ite" target="_blank" rel="nofollow">#ite</a> <a href="http://twitter.com/search?q=%23transportation" target="_blank" rel="nofollow">#transportation</a> <a href="http://twitter.com/search?q=%23freefood" target="_blank" rel="nofollow">#freefood</a>… <a href="https://t.co/6URw2neltX" target="_blank" rel="nofollow">https://t.co/6URw2neltX</a>                  <span class="stt-em">
-            <a href="http://twitter.com/_UFTI/status/910234868646318080" target="_blank">
-              2 weeks             </a>
-                  </span>
-
-            
-              </li>
-                        <li class="avatar" style="margin-left:35px">
-                <img style="margin-left:-35px" width="30px" height="30px" src="http://pbs.twimg.com/profile_images/885891636538081280/dxxMolVS_normal.jpg" alt="Tweet Avatar" class="a-corn">               We would like to welcome our newest <a href="http://twitter.com/search?q=%23faculty" target="_blank" rel="nofollow">#faculty</a> member, Lili Du! Read about Dr. Du here: <a href="https://t.co/lOdrrnJUS4" target="_blank" rel="nofollow">https://t.co/lOdrrnJUS4</a> <a href="http://twitter.com/search?q=%23UFTI" target="_blank" rel="nofollow">#UFTI</a>… <a href="https://t.co/r6PrjrxYwb" target="_blank" rel="nofollow">https://t.co/r6PrjrxYwb</a>                 <span class="stt-em">
-            <a href="http://twitter.com/_UFTI/status/907982459110912000" target="_blank">
-              3 weeks             </a>
-                  </span>
-
-            
-              </li>
-          
-            </ul>
-
-              <div class="twitter-follow-container"><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-follow-button twitter-follow-button-rendered" title="Twitter Follow Button" src="http://platform.twitter.com/widgets/follow_button.b7974b8ae7c1ae9cc22c4e8064c094ca.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=_UFTI&amp;show_count=false&amp;show_screen_name=true&amp;size=m&amp;time=1507051797398" style="position: static; visibility: visible; width: 106px; height: 20px;" data-screen-name="_UFTI"></iframe></div>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div> --><!-- </section> --></div></div><!-- end #secondary --> 
-
-  
-<footer role="contentinfo">
-          
-  <div id="institutional-footer">
-   <!--  <div class="container">
-      <div id="footer_container">
-        <div class="span-7 alpha">
-          <h2>Contact</h2>
-          <address>
-          <p>University of Florida Transportation Institute<br>512 Weil Hall<br>P.O. Box PO Box 116580<br>Gainesville, FL 32611-6580<br>Phone: 352-294-7762<br><a href="https://www.eng.ufl.edu/about/contact/">Full list of office phone numbers</a><br></p><p><a href="mailto:UFTI@eng.ufl.edu">UFTI@eng.ufl.edu</a><br><a id="contact-webmaster" href="mailto:elaine.khoo@essie.ufl.edu">Contact webmaster</a>         </p></address>
-        </div>
-        <div class="footer-links span-6">
-          <ul>
-            <li><a href="http://www.transportation.institute.ufl.edu">Home</a></li>
-            <li class="page_item page-item-10403"><a href="http://www.transportation.institute.ufl.edu/4-1-program-for-uf-cce-undergraduate-students/">4-1 Program for UF CCE undergraduate students</a></li>
-<li class="page_item page-item-8185"><a href="http://www.transportation.institute.ufl.edu/activity/">Activity</a></li>
-<li class="page_item page-item-9361"><a href="http://www.transportation.institute.ufl.edu/calendar-2/">Calendar</a></li>
-<li class="page_item page-item-411"><a href="http://www.transportation.institute.ufl.edu/cammy-r-abernathy-ph-d/">Cammy R. Abernathy, Ph.D.</a></li>
-<li class="page_item page-item-6423"><a href="http://www.transportation.institute.ufl.edu/chimay-j-anumba-freng-ph-d-d-sc-dr-h-c-pe/">Chimay J. Anumba, FREng, PH.D., D.Sc., Dr.h.c., PE</a></li>
-<li class="page_item page-item-10409"><a href="http://www.transportation.institute.ufl.edu/concurrent-degree-program-in-transportation-engineering-and-urban-planning/">Concurrent Degree Program in Transportation Engineering and Urban Planning</a></li>
-<li class="page_item page-item-1640"><a href="http://www.transportation.institute.ufl.edu/the-2014-florida-automated-vehicles-initiatives/">FDOT&#8217;s 2014 Automated Vehicles Initiative</a></li>
-<li class="page_item page-item-10357"><a href="http://www.transportation.institute.ufl.edu/lili-du-ph-d/">Lili Du, Ph.D.</a></li>
-<li class="page_item page-item-8189"><a href="http://www.transportation.institute.ufl.edu/members-2/">Members</a></li>
-<li class="page_item page-item-6663"><a href="http://www.transportation.institute.ufl.edu/new-nchrp-project-looks-at-incorporating-spillover-effects-into-the-highway-capacity-manual/">New NCHRP Project Looks at Incorporating Spillover Effects into the Highway Capacity Manual</a></li>
-<li class="page_item page-item-2934"><a href="http://www.transportation.institute.ufl.edu/ufti-e-newsletters-2014-archive/">Newsletters &#8211; UFTI &#8211; 2014 Archive</a></li>
-<li class="page_item page-item-1786"><a href="http://www.transportation.institute.ufl.edu/newsletters-ufti-2014/">Newsletters &#8211; UFTI &#8211; 2015 Archive</a></li>
-<li class="page_item page-item-4942"><a href="http://www.transportation.institute.ufl.edu/newsletters-ufti-2016/">Newsletters &#8211; UFTI &#8211; 2016 Archive</a></li>
-<li class="page_item page-item-8435"><a href="http://www.transportation.institute.ufl.edu/newsletters-ufti-2017/">NEWSLETTERS – UFTI – 2017</a></li>
-<li class="page_item page-item-43 page_item_has_children"><a href="http://www.transportation.institute.ufl.edu/overview/">Overview</a></li>
-<li class="page_item page-item-10399"><a href="http://www.transportation.institute.ufl.edu/program-curriculum/">Program Curriculum</a></li>
-<li class="page_item page-item-198"><a href="http://www.transportation.institute.ufl.edu/quick-links/">Quick Links</a></li>
-<li class="page_item page-item-5505 page_item_has_children"><a href="http://www.transportation.institute.ufl.edu/research-2/">Research</a></li>
-<li class="page_item page-item-5510"><a href="http://www.transportation.institute.ufl.edu/research-3/">Research &#8211; a</a></li>
-<li class="page_item page-item-955"><a href="http://www.transportation.institute.ufl.edu/research-highlights-archive/">Research Highlights Archive</a></li>
-<li class="page_item page-item-9507"><a href="http://www.transportation.institute.ufl.edu/resources/">Resources</a></li>
-<li class="page_item page-item-310"><a href="http://www.transportation.institute.ufl.edu/traffic-signal-laboratory/">Traffic Signal Laboratory</a></li>
-<li class="page_item page-item-5810"><a href="http://www.transportation.institute.ufl.edu/transportation-engineering-specialization/">Transportation Engineering Specialization</a></li>
-<li class="page_item page-item-6665"><a href="http://www.transportation.institute.ufl.edu/ufti-student-receives-scholarship-to-attend-the-academic-leadership-for-women-in-engineering-program/">UFTI Student Receives Scholarship to Attend the Academic Leadership for Women in Engineering Program</a></li>
-<li class="page_item page-item-6472"><a href="http://www.transportation.institute.ufl.edu/ufti-upgrades-its-full-car-simulator-creating-opportunities-for-a-variety-of-interdisciplinary-driving-research/">UFTI Upgrades Its Full Car Simulator Creating Opportunities for Interdisciplinary Driving Research</a></li>
-<li class="page_item page-item-1609"><a href="http://www.transportation.institute.ufl.edu/student-feature-alexandra-kondyli/">University of Kansas Hires a UFTI Alumna</a></li>
-<li class="page_item page-item-6158"><a href="http://www.transportation.institute.ufl.edu/weil-512a-reservations/">Weil 512A Reservations</a></li>
-<li class="page_item page-item-3315"><a href="http://www.transportation.institute.ufl.edu/transportation-uf-video/">The Transportation Program @ UF (Video)</a></li>
-<li class="page_item page-item-419"><a href="http://www.transportation.institute.ufl.edu/jennifer-s-curtis-ph-d/">Forrest Masters, Ph.D.</a></li>
-<li class="page_item page-item-50"><a href="http://www.transportation.institute.ufl.edu/organization/">Organization</a></li>
-<li class="page_item page-item-902"><a href="http://www.transportation.institute.ufl.edu/amr-h-abd-elrahman-ph-d/">Amr H. Abd-Elrahman, Ph.D.</a></li>
-<li class="page_item page-item-317"><a href="http://www.transportation.institute.ufl.edu/computer-laboratory/">Computer Laboratory</a></li>
-<li class="page_item page-item-1063"><a href="http://www.transportation.institute.ufl.edu/ines-aviles-spadoni-m-s/">Ines Aviles-Spadoni, M.S.</a></li>
-<li class="page_item page-item-337"><a href="http://www.transportation.institute.ufl.edu/ite/">ITE</a></li>
-<li class="page_item page-item-416"><a href="http://www.transportation.institute.ufl.edu/mark-law-ph-d/">Wesley Bolch, Ph.D., PE</a></li>
-<li class="page_item page-item-426"><a href="http://www.transportation.institute.ufl.edu/angela-s-lidner-ph-d/">Curtis Taylor, Ph.D.</a></li>
-<li class="page_item page-item-166"><a href="http://www.transportation.institute.ufl.edu/florida-minority-task-force-on-occupant-protection/">Florida Minority Task Force on Occupant Protection</a></li>
-<li class="page_item page-item-162"><a href="http://www.transportation.institute.ufl.edu/florida-occupant-protection-resource-center/">Florida OPRC</a></li>
-<li class="page_item page-item-164"><a href="http://www.transportation.institute.ufl.edu/florida-pedestrian-and-bicycling-safety-resource-center/">Florida PedBike SRC</a></li>
-<li class="page_item page-item-4173"><a href="http://www.transportation.institute.ufl.edu/evangelos-christou-ph-d/">Evangelos Christou, Ph.D.</a></li>
-<li class="page_item page-item-517"><a href="http://www.transportation.institute.ufl.edu/carl-crane-ph-d/">Carl Crane, Ph.D.</a></li>
-<li class="page_item page-item-320"><a href="http://www.transportation.institute.ufl.edu/instrumented-vehicle/">Instrumented Vehicle</a></li>
-<li class="page_item page-item-1066"><a href="http://www.transportation.institute.ufl.edu/george-benson/">Nina Barker</a></li>
-<li class="page_item page-item-908"><a href="http://www.transportation.institute.ufl.edu/ravindra-k-ahuja-ph-d/">Ravindra K. Ahuja, Ph.D.</a></li>
-<li class="page_item page-item-2191"><a href="http://www.transportation.institute.ufl.edu/videos/">Videos</a></li>
-<li class="page_item page-item-80"><a href="http://www.transportation.institute.ufl.edu/women-in-transportation/">WTS</a></li>
-<li class="page_item page-item-1069"><a href="http://www.transportation.institute.ufl.edu/charles-brown/">Charles Brown</a></li>
-<li class="page_item page-item-911"><a href="http://www.transportation.institute.ufl.edu/chunrong-ai-ph-d/">Chunrong Ai, Ph.D.</a></li>
-<li class="page_item page-item-9 page_item_has_children"><a href="http://www.transportation.institute.ufl.edu/training-continuing-eduction/">Education</a></li>
-<li class="page_item page-item-395"><a href="http://www.transportation.institute.ufl.edu/lily-elefteriadou-ph-d/">Lily Elefteriadou, Ph.D.</a></li>
-<li class="page_item page-item-71 page_item_has_children"><a href="http://www.transportation.institute.ufl.edu/trainingprofessional-development/">Technology Transfer</a></li>
-<li class="page_item page-item-917"><a href="http://www.transportation.institute.ufl.edu/farid-aitsahlia-ph-d/">Farid AitSahlia, Ph.D.</a></li>
-<li class="page_item page-item-531"><a href="http://www.transportation.institute.ufl.edu/myoseon-jang-ph-d/">Myoseon Jang, Ph.D.</a></li>
-<li class="page_item page-item-326"><a href="http://www.transportation.institute.ufl.edu/steward/">STEWARD</a></li>
-<li class="page_item page-item-3532"><a href="http://www.transportation.institute.ufl.edu/james-backiak-ph-d/">James Baciak, Ph.D.</a></li>
-<li class="page_item page-item-1162"><a href="http://www.transportation.institute.ufl.edu/angelos-barmpoutis-ph-d/">Angelos Barmpoutis, Ph.D.</a></li>
-<li class="page_item page-item-11 page_item_has_children"><a href="http://www.transportation.institute.ufl.edu/publications/">News and Events</a></li>
-<li class="page_item page-item-1171"><a href="http://www.transportation.institute.ufl.edu/john-egberts-m-s/">John Egberts, M.S.</a></li>
-<li class="page_item page-item-4176"><a href="http://www.transportation.institute.ufl.edu/wanda-eugene-ph-d/">Wanda Eugene, Ph.D.</a></li>
-<li class="page_item page-item-1079"><a href="http://www.transportation.institute.ufl.edu/jonathan-czerenda/">Jonathan Czerenda</a></li>
-<li class="page_item page-item-1174"><a href="http://www.transportation.institute.ufl.edu/paul-fishwick-ph-d/">Paul Fishwick, Ph.D.</a></li>
-<li class="page_item page-item-784"><a href="http://www.transportation.institute.ufl.edu/sanjay-ranka-ph-d/">Sanjay Ranka, Ph.D.</a></li>
-<li class="page_item page-item-3516"><a href="http://www.transportation.institute.ufl.edu/jeniffer-rice-ph-d-assistant-professor/">Jennifer Rice, Ph.D.</a></li>
-<li class="page_item page-item-1177"><a href="http://www.transportation.institute.ufl.edu/joseph-geunes/">Joseph Geunes, Ph.D.</a></li>
-<li class="page_item page-item-3608"><a href="http://www.transportation.institute.ufl.edu/juan-gilbert-ph-d/">Juan Gilbert, Ph.D.</a></li>
-<li class="page_item page-item-1084"><a href="http://www.transportation.institute.ufl.edu/mitchell-g-davis/">Mitchell G. Davis</a></li>
-<li class="page_item page-item-1181"><a href="http://www.transportation.institute.ufl.edu/yongpei-guan-ph-d/">Yongpei Guan, Ph.D.</a></li>
-<li class="page_item page-item-3525"><a href="http://www.transportation.institute.ufl.edu/trey-hamilton-pe-ph-d/">Trey Hamilton, PE, Ph.D.</a></li>
-<li class="page_item page-item-1184"><a href="http://www.transportation.institute.ufl.edu/ahmed-helmy-ph-d/">Ahmed Helmy, Ph.D.</a></li>
-<li class="page_item page-item-1187"><a href="http://www.transportation.institute.ufl.edu/dennis-hiltunen-ph-d/">Dennis Hiltunen, Ph.D.</a></li>
-<li class="page_item page-item-792"><a href="http://www.transportation.institute.ufl.edu/bill-sampson-pe/">Bill Sampson, PE</a></li>
-<li class="page_item page-item-1192"><a href="http://www.transportation.institute.ufl.edu/hartwig-h-hochmair-ph-d/">Hartwig H. Hochmair, Ph.D.</a></li>
-<li class="page_item page-item-1086"><a href="http://www.transportation.institute.ufl.edu/leon-duda/">Leon Duda</a></li>
-<li class="page_item page-item-1195"><a href="http://www.transportation.institute.ufl.edu/t-griffith-jones-ph-d/">T. Griffith Jones, Ph.D.</a></li>
-<li class="page_item page-item-3614"><a href="http://www.transportation.institute.ufl.edu/sriram-kalyananraman-ph-d/">Sriram Kalyananraman, Ph.D.</a></li>
-<li class="page_item page-item-1088"><a href="http://www.transportation.institute.ufl.edu/linda-k-floyd/">Linda K. Floyd</a></li>
-<li class="page_item page-item-770"><a href="http://www.transportation.institute.ufl.edu/siva-srinivasan-ph-d/">Siva Srinivasan, Ph.D.</a></li>
-<li class="page_item page-item-1198"><a href="http://www.transportation.institute.ufl.edu/theodore-j-kury-ph-d/">Theodore J. Kury, Ph.D.</a></li>
-<li class="page_item page-item-1201"><a href="http://www.transportation.institute.ufl.edu/william-c-mann-ph-d/">William C. Mann, Ph.D.</a></li>
-<li class="page_item page-item-3539"><a href="http://www.transportation.institute.ufl.edu/michele-v-manuel-ph-d/">Michele V. Manuel, Ph.D.</a></li>
-<li class="page_item page-item-1205"><a href="http://www.transportation.institute.ufl.edu/ahmed-mohamed-ph-d/">Ahmed Mohamed, Ph.D.</a></li>
-<li class="page_item page-item-243"><a href="http://www.transportation.institute.ufl.edu/calendar/">Calendar</a></li>
-<li class="page_item page-item-2472"><a href="http://www.transportation.institute.ufl.edu/ivan-mutis-ph-d-assistant-research-scientist/">Ivan Mutis, Ph.D.</a></li>
-<li class="page_item page-item-1208"><a href="http://www.transportation.institute.ufl.edu/panos-pardalos-ph-d/">Panos Pardalos, Ph.D., Distinguished Professor</a></li>
-<li class="page_item page-item-1092"><a href="http://www.transportation.institute.ufl.edu/philip-hill/">Philip Hill</a></li>
-<li class="page_item page-item-774"><a href="http://www.transportation.institute.ufl.edu/ruth-steiner-ph-d-mba/">Ruth Steiner, Ph.D., MBA</a></li>
-<li class="page_item page-item-1215"><a href="http://www.transportation.institute.ufl.edu/lori-pennington-gray-ph-d/">Lori Pennington-Gray, Ph.D.</a></li>
-<li class="page_item page-item-1212"><a href="http://www.transportation.institute.ufl.edu/zhong-ren-peng-ph-d/">Zhong-Ren Peng, Ph.D.</a></li>
-<li class="page_item page-item-782"><a href="http://www.transportation.institute.ufl.edu/reynaldo-roque-ph-d/">Reynaldo Roque, Ph.D.</a></li>
-<li class="page_item page-item-1094"><a href="http://www.transportation.institute.ufl.edu/vishal-a-khanapure-m-s/">Vishal A. Khanapure, M.S.</a></li>
-<li class="page_item page-item-1218"><a href="http://www.transportation.institute.ufl.edu/chris-sliver-ph-d/">Chris Silver, Ph.D.</a></li>
-<li class="page_item page-item-1221"><a href="http://www.transportation.institute.ufl.edu/markus-schneider-ph-d/">Markus Schneider, Ph.D.</a></li>
-<li class="page_item page-item-1096"><a href="http://www.transportation.institute.ufl.edu/sonja-t-lee/">Sonja T. Lee</a></li>
-<li class="page_item page-item-536"><a href="http://www.transportation.institute.ufl.edu/yafeng-yin-ph-d/">Yafeng Yin, Ph.D.</a></li>
-<li class="page_item page-item-1225"><a href="http://www.transportation.institute.ufl.edu/orit-shechtman-ph-d/">Orit Shechtman, Ph.D.</a></li>
-<li class="page_item page-item-1228"><a href="http://www.transportation.institute.ufl.edu/brijesh-thapa-ph-d/">Brijesh Thapa, Ph.D.</a></li>
-<li class="page_item page-item-1098"><a href="http://www.transportation.institute.ufl.edu/david-k-page/">David K. Page</a></li>
-<li class="page_item page-item-1232"><a href="http://www.transportation.institute.ufl.edu/scott-washburn-ph-d/">Scott S. Washburn, Ph.D., P.E.</a></li>
-<li class="page_item page-item-1100"><a href="http://www.transportation.institute.ufl.edu/deborah-j-powell/">Deborah J. Powell</a></li>
-<li class="page_item page-item-1237"><a href="http://www.transportation.institute.ufl.edu/sandra-winter-ph-d/">Sandra Winter, Ph.D.</a></li>
-<li class="page_item page-item-1102"><a href="http://www.transportation.institute.ufl.edu/linda-randi/">Linda Randi</a></li>
-<li class="page_item page-item-1240"><a href="http://www.transportation.institute.ufl.edu/paul-zwick-ph-d/">Paul Zwick, Ph.D.</a></li>
-<li class="page_item page-item-1104"><a href="http://www.transportation.institute.ufl.edu/sean-samford/">Sean Samford</a></li>
-<li class="page_item page-item-1106"><a href="http://www.transportation.institute.ufl.edu/jeri-shell/">Jeri Shell</a></li>
-<li class="page_item page-item-1108"><a href="http://www.transportation.institute.ufl.edu/paul-simpson/">Paul Simpson</a></li>
-<li class="page_item page-item-1110"><a href="http://www.transportation.institute.ufl.edu/alison-tillman/">Alison Tillman</a></li>
-<li class="page_item page-item-1112"><a href="http://www.transportation.institute.ufl.edu/scott-tison/">Scott Tison</a></li>
-<li class="page_item page-item-1118"><a href="http://www.transportation.institute.ufl.edu/morgan-witter/">Morgan Witter</a></li>
-
-            <li><a href="/about-this-site/">About This Site</a></li>
-                        
-          </ul>
-
-        </div>
-
-        <div class="footer-links ads span-5">
-          <ul>
-            <li class="online-store"><a href="http://www.skorfanshop.com/shops/portal/?fanshopid=775&amp;CFID=47812416&amp;CFTOKEN=637b86ccae593e24-7C057270-0E17-A9F7-66075B26BFDC4E8D" title="Online Store">Gator Engineering Store</a></li>
-            <li class="gift"><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=000661">Make a Gift</a></li>
-            <li><a href="/about/transformation/" title="Powering the New Engineer to Transform the Future" class="pnetf ir">Powering the New Engineer to Transform the Future</a></li>
-          </ul>
-              
-        </div>
-
-        <div class="footer-links span-5 omega">
-          <h2>Connect</h2>
-          <ul class="social">
-            <li><a href="https://www.facebook.com/UFTransportation/" title="Facebook" class="facebook ir">Facebook</a></li>
-            <li><a href="https://twitter.com/_UFTI" title="Twitter" class="twitter ir">Twitter</a></li>
-            <li><a href="https://www.youtube.com/channel/UCWEOIBqjKAUG5ZCPQ1fQO9A/videos" title="Youtube" class="youtube ir">Youtube</a></li>
-            <li><a href="https://www.linkedin.com/groups/6748369" title="LinkedIn" class="linkedin ir">LinkedIn</a></li>
-            <li><a href="https://instagram.com/ufwertheim/" title="Instagram" class="instagram ir">Instagram</a></li>
-            <li><a href="https://www.flickr.com/photos/gatorengineering/" title="Flickr" class="flickr ir">Flickr</a></li>
-          </ul>
-          <p class="clear mail"><a href="/alumni-giving/contact/update-info/">Update Your Information</a></p>
-        </div>
-      </div> --> <!-- /footer-container -->
-    </div> <!-- /container -->
-    <div class="footer-bottom">
-      <div class="container">
-        <a href="http://www.ufl.edu/" class="uf-logo ir">University of Florida</a>
-        <ul>
-          <li>© 2017 <a href="http://www.ufl.edu/">University of Florida</a></li>
-           <li>Site Updated October 3, 2017</li>        </ul>
-        <ul>
-          <li>This page uses <a href="http://www.google.com/analytics/">Google Analytics</a> <a href="http://www.google.com/intl/en_ALL/privacypolicy.html">(Google Privacy Policy)</a></li>
-          <li><a href="http://assistive.usablenet.com/tt/http://www.transportation.institute.ufl.edu" accesskey="t" title="Text-only version of this website">Text-only Version</a></li>
-          <li><a href="http://www.ufl.edu/disability/">Disability Services</a></li>
-          <li><a href="http://privacy.ufl.edu/privacystatement.html">Privacy Policy</a></li>
-          <li><a href="http://regulations.ufl.edu/">Regulations</a></li>
-        </ul>
-      </div><!-- /container -->
-    </div> <!-- /footer-bottom -->
-  </div><!-- end institutional footer container -->
-</footer>     
-
-  
-<script type="text/javascript">#slideshow .half-image-feature h3 {
-font-size: 2em;
-}
-nav.main_menu .sub-menu .sub-menu {
-  left: 200px !important;
-  right: auto !important;
-}</script>
-<!--[if lt IE 7 ]>
-<script src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/dd_belatedpng.js"></script>
-<script> DD_belatedPNG.fix('img, .png_bg'); </script>
-<![endif]-->
-    <script>
-    ( function ( body ) {
-      'use strict';
-      body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
-    } )( document.body );
-    </script>
-    <script type="text/javascript"> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done"}};/* ]]> */ </script><script>
-    jQuery(document).ready(function () {
-    jQuery.post('http://www.transportation.institute.ufl.edu?ga_action=googleanalytics_get_script', {action: 'googleanalytics_get_script'}, function(response) {
-      var F = new Function ( response );
-      return( F() );
-    });
-    });
-</script><script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/autoclear.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/jquery.cycle.min.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/jquery.hoverIntent.minified.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/jquery.prettyPhoto.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/script.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/responsive.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/mega-menu.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/js/feature-slider.js?ver=4.8.2"></script>
-<script type="text/javascript" src="http://www.transportation.institute.ufl.edu/wp-includes/js/wp-embed.min.js?ver=4.8.2"></script>
-<script>
-currentLocation = 'http://www.transportation.institute.ufl.edu/'; 
-function ajaxGetMobile(){
-$.ajax({
-      type: 'GET',
-      url: 'http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/php/SetCookieMobile.php', 
-      timeout: 2000,
-      success: function(data) {
-      // location.reload();
-      window.location.href = currentLocation.split('?')[0];
-      },
-      error: function (XMLHttpRequest, textStatus, errorThrown) {
-        alert("error retrieving content");
-      }
-    })      
-}
-function ajaxGetFull(){
- $.ajax({
-        type: 'GET',
-        url: 'http://www.transportation.institute.ufl.edu/wp-content/themes/ufl-template-responsive-master/library/php/SetCookieFull.php', 
-        timeout: 2000,
-        success: function(data) {
-  window.location.href = "?mobile=no";
-        },
-        error: function (XMLHttpRequest, textStatus, errorThrown) {
-          alert("error retrieving content");
-        }
-      })
-}
-function SendCookies(){
-    if (jQuery('#responsive-bool').is(':checked')){
-        ajaxGetMobile();      
-    }else{
-        ajaxGetFull();
-    }
-}
-  </script>
-<script>
-function hideModal(){jQuery('#mobile-modal').hide();}
-function responsiveEmbed(){jQuery('iframe').wrap("<div class='responsive-embed'></div>")}
-// jQuery('#mobile-modal-close').click(function(){hideModal();});
-jQuery('#mobile-modal-close').click(function(){hideModal();});
-
-hideModal() 
-jQuery("#full-link").click(function(){ajaxGetFull();});
-jQuery("#mobile-link").click(function(){ajaxGetMobile();});
-
-</script>
-
-
-
-</class="home></body>
-</html>
+    </p>
+  </div>
+  <br>Enjoy &amp; Keep Us Updated,
+  <br>The MEAN.JS Team.
+</section>

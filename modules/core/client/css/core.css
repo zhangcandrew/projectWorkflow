@@ -55,3 +55,15 @@ a:hover .header-profile-image {
   color: #00529b;
   padding-left:100px;
 }
+
+
+.test {
+  color: orange;
+  font-size: 200%;
+  margin-left:50px;
+  padding:0px;
+}
+
+.tsc {
+  margin-top: -40px;
+}
