@@ -1,5 +1,8 @@
 .content {
   margin-top: 50px;
+  background-color: #dcdcdc;
+  border-top: 5px;
+  border-top-color: white;
 }
 .undecorated-link:hover {
   text-decoration: none;
@@ -40,4 +43,22 @@ a:hover .header-profile-image {
 }
 .has-error .help-inline.error-text {
   display: inline;
+}
+
+
+.nav-style {
+  background-color: #00529b;
+  color: white;
+  padding: 0px;
+}
+
+.logo-style {
+  background-color: white;
+  padding: 10px;
+  color: #00529b;
+  padding-left:100px;
+}
+
+.home-style {
+ margin-top:15%;
 }
