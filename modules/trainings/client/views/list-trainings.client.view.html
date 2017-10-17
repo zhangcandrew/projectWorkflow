@@ -1,27 +1,16 @@
-<section>
-  <div class="page-header" >
-    <h1>Trainings</h1>
-  </div>
-  <button>Register Now</button>
-  <div class="list-group">
-    <a ng-repeat="training in vm.trainings"
-       ui-sref="trainings.view({ trainingId: training._id })"
-       class="list-group-item">
-      <small class="list-group-item-text">
-        Posted on
-        <span ng-bind="training.created | date:'mediumDate'"></span>
-        by
-        <span ng-if="training.user" ng-bind="training.user.displayName"></span>
-        <span ng-if="!training.user">Deleted User</span>
-      </small>
-      <h4 class="list-group-item-heading" ng-bind="training.name"></h4>
-    </a>
-  </div>
 
-	<div>
-	</div>
+<div id="content-wrap">
+<section>
+  <div class="page-header">
+    <h1>
+    	<span>Trainings</span>
+    	<button id="register">Register Now</button>
+    </h1>
+  </div>
 
   <div>
 		<iframe src="https://calendar.google.com/calendar/embed?src=tscuf2017%40gmail.com&ctz=America/New_York" style="border-width:0" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
   </div>
 </section>
+</div>
+
