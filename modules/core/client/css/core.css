@@ -1,5 +1,8 @@
 .content {
   margin-top: 50px;
+  background-color: #dcdcdc;
+  border-top: 5px;
+  border-top-color: white;
 }
 .undecorated-link:hover {
   text-decoration: none;
