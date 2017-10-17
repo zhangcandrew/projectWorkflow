@@ -137,3 +137,12 @@ h1, h2 {
     float:right;
 
 }
+
+.txtbox {
+	margin-top: 15px;
+	border-radius: 5px;
+	background: #EAEAEA;
+	padding: 10px;
+	height: 355px;
+	border: 1px solid #6495ED;
+}
