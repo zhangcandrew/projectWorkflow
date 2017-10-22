@@ -1,5 +1,39 @@
+.info{
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px #000000;
+  color: white;
+  padding: 20px;
+  background: #839EA7;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 0 0 0;
+  position: relative;
+}
+
+.home{
+  background: white;
+  width: 70%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.back{
+  background: white;
+  padding: 15px;
+}
+.slides{
+margin-top: 30%;
+}
+
+
+
+
+
 .content {
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .undecorated-link:hover {
   text-decoration: none;
@@ -18,13 +52,15 @@
   opacity: 0.8;
   width: 28px;
 }
+
+
 .open .header-profile-image,
 a:hover .header-profile-image {
   opacity: 1;
 }
 .user-header-dropdown-toggle {
-  padding-bottom: 11px !important;
-  padding-top: 11px !important;
+  padding-bottom: 11px;
+  padding-top: 11px;
 }
 .user-primary-account {
   font-size: 30px;
