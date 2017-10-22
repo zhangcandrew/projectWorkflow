@@ -33,7 +33,10 @@ margin-top: 30%;
 
 
 .content {
-  margin-top: 150px;
+  margin-top: 50px;
+  background-color: #dcdcdc;
+  border-top: 5px;
+  border-top-color: white;
 }
 .undecorated-link:hover {
   text-decoration: none;
@@ -90,4 +93,8 @@ a:hover .header-profile-image {
   padding: 10px;
   color: #00529b;
   padding-left:100px;
+}
+
+.home-style {
+ margin-top:15%;
 }
