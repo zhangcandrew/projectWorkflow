@@ -26,9 +26,26 @@
         </div>
 
                 <div class="form-group" show-errors>
-          <label class="control-label" for="Latitude">Latitude</label>
+          <label class="control-label" for="latitude">Latitude</label>
           <input name="latitde" type="text" ng-model="vm.userproject.latitude" id="latitude" class="form-control" placeholder="Latitude" required>
         </div>
+
+                  <div class="form-group" show-errors>
+          <label class="control-label" for="progress">Select Your Projects Progress</label>
+          <select name="progress" ng-model="vm.userproject.progress" id="progress" class="form-control" required>
+
+              <option value="proposed">Proposed</option>
+              <option value="inprogress">In Progress</option>
+              <option Value="completed">Completed</option>
+
+          </select>
+        </div>
+
+                  <div class="form-group" show-errors>
+          <label class="control-label" for="imagelink">URL Link to an image of your project</label>
+          <input name="imagelink" type="text" ng-model="vm.userproject.imagelink" id="imagelink" class="form-control" placeholder="Image Link">
+        </div>
+
         <div class="form-group">
           <button type="submit" class="btn btn-default">{{vm.userproject._id ? 'Update' : 'Create'}}</button>
         </div>

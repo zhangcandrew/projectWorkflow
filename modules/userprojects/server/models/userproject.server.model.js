@@ -40,6 +40,17 @@ var UserprojectSchema = new Schema({
     required: 'Please fill project latitude',
     trim: true
   },
+    progress: {
+    type: String,
+    default: '',
+    required: 'Please select your projects current progress',
+    trim: true
+  },
+    imagelink: {
+    type: String,
+    default: '',
+    trim: true
+  },
   created: {
     type: Date,
     default: Date.now
