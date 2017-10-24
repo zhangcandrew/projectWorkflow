@@ -14,13 +14,18 @@
     $scope.active = 0;
     var slides = $scope.slides = [];
     var currIndex = 0;  
+    var gatorSlides = $scope.gatorSlides = ['https://i.imgur.com/Jvc7GUS.png', 'https://i.imgur.com/qVr0EGd.jpg', 'https://i.imgur.com/mtgcd80.jpg','https://i.imgur.com/9Zml2dR.jpg'];
   
     $scope.addSlide = function() {
       var newWidth = 600 + slides.length + 1;
       slides.push({
-        image:'https://i.imgur.com/1sK1W71.jpg' + newWidth + '/300',
+        image: gatorSlides[currIndex],
+        style:{
+          width: '950',
+          height: '700'
+        },
         /*image: '//unsplash.it/' + newWidth + ,'/300',*/
-        text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
+        //text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
         id: currIndex++
       });
     };

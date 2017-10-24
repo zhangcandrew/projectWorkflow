@@ -11,7 +11,7 @@
 }
 
 .home{
-  
+  background: white;
   width: 70%;
   margin: 0;
   position: absolute;
@@ -27,10 +27,6 @@
 .slides{
 margin-top: 30%;
 }
-
-
-
-
 
 .content {
   margin-top: 50px;
