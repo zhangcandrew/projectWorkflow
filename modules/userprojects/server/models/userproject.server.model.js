@@ -31,7 +31,7 @@ var UserprojectSchema = new Schema({
     longitude: {
     type: Number,
     default: '',
-    required: 'Please fill Userproject longitude',
+    required: 'Please fill project longitude',
     trim: true
   },
     latitude: {
