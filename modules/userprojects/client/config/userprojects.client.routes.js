@@ -60,6 +60,15 @@
         data: {
           pageTitle: 'Userproject {{ userprojectResolve.name }}'
         }
+      })
+      .state('userprojectsadmin.list', {
+        url: '',
+        templateUrl: 'modules/userprojects/client/views/admin-list-userprojects.client.view.html',
+        controller: 'UserprojectsListController',
+        controllerAs: 'vm',
+        data: {
+          pageTitle: 'User Projects List'
+        }
       });
   }
 

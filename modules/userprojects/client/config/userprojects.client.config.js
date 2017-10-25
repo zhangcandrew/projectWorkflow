@@ -26,7 +26,19 @@
     menuService.addSubMenuItem('topbar', 'userprojects', {
       title: 'Create User Project',
       state: 'userprojects.create',
-      roles: ['user']
+      roles: ['admin']
+    });
+
+    menuService.addSubMenuItem('topbar', 'admin', {
+    title: 'Manage Projects',
+    state: 'userprojects.list'
+
+    });
+
+        menuService.addSubMenuItem('topbar', 'admin', {
+    title: 'Add New Project',
+    state: 'userprojects.create'
+
     });
   }
 }());

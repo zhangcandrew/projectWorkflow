@@ -1,0 +1,23 @@
+<section>
+  <div class="page-header">
+    <h1>User Projects</h1>
+    <h2>Admin View</h2>
+  </div>
+  <div class="list-group">
+    <a ng-repeat="userproject in vm.userprojects"
+       ui-sref="userprojects.view({ userprojectId: userproject._id })"
+       class="list-group-item">
+      <small class="list-group-item-text">
+        Created on
+        <span ng-bind="userproject.created | date:'mediumDate'"></span>
+        by
+        <span ng-if="userproject.user" ng-bind="userproject.user.displayName"></span>
+        <span ng-if="!userproject.user">Deleted User</span>
+      </small>
+      <h4 class="list-group-item-heading" ng-bind="userproject.name"></h4>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" ng-if="vm.userprojects.$resolved && !vm.userprojects.length">
+    No User project yet, why don't you <a ui-sref="userprojects.create">create one</a>?
+  </div>
+</section>

@@ -21,6 +21,7 @@
       slides.push({
         image: gatorSlides[currIndex],
         style:{
+ kylesHomepage
           width: '950px',
           height: '700px'
         },

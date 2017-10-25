@@ -1,22 +1,68 @@
+
+<div id="content-wrap">
 <section>
   <div class="page-header">
-    <h1>Resources</h1>
+    <h1>
+      <span>Resources</span>
+    </h1>
   </div>
-  <div class="list-group">
-    <a ng-repeat="resource in vm.resources"
-       ui-sref="resources.view({ resourceId: resource._id })"
-       class="list-group-item">
-      <small class="list-group-item-text">
-        Posted on
-        <span ng-bind="resource.created | date:'mediumDate'"></span>
-        by
-        <span ng-if="resource.user" ng-bind="resource.user.displayName"></span>
-        <span ng-if="!resource.user">Deleted User</span>
-      </small>
-      <h4 class="list-group-item-heading" ng-bind="resource.name"></h4>
-    </a>
-  </div>
-  <div class="alert alert-warning text-center" ng-if="vm.resources.$resolved && !vm.resources.length">
-    No Resources yet, why don't you <a ui-sref="resources.create">create one</a>?
+
+  <div>
+    
+
+      <div class="row">
+
+          <div class="col-md-6">
+          <div class="txtbox">
+            <h2><strong>Federal Safety Resources</strong></h2>
+            <ul>
+              <li><strong>Federal Highway Administration (FHWA) Safety:</strong> http://safety.fhwa.dot.gov/</li>
+              <li><strong>National Highway Traffic Safety Administration:</strong> http://www.nhtsa.gov/</li>
+              <li><strong>NCHRP Report 811: Institutionalizing Safety in Transportation Planning Processes:</strong> http://onlinepubs.trb.org/onlinepubs/nchrp/nchrp_rpt_811.pdf</li>
+              <li><strong>Countermeasures That Work: A Highway Safety Countermeasure Guide for State Highway Safety Offices:</strong> http://www.nhtsa.gov/staticfiles/nti/pdf/811727.pdf</li>
+              <li><strong>Traffic Safety Marketing:</strong> http://www.trafficsafetymarketing.gov/</li>
+            </ul>
+          </div>
+          </div>
+
+          <div class="col-md-6">
+          <div class="txtbox">
+            <h2><strong>Local Road Safety</strong></h2>
+            <ul>
+              <li><strong>High Friction Surface Treatment Video:</strong> https://www.youtube.com/watch?v=HVzS-VkABPE</li>
+              <li><strong>Toolbox of Countermeasures and Their Potential Effectiveness for Pedestrian Crashes:</strong> http://safety.fhwa.dot.gov/tools/crf/resources/briefs/pedissuebrief.cfm</li>
+              <li><strong>Toolbox of Countermeasures and Their Potential Effectiveness for Roadway Departure Crashes: </strong> http://safety.fhwa.dot.gov/tools/crf/resources/briefs/rdwydepartissue.cfm</li>
+              <li><strong>Roadway Departure Safety: A Manual for Local Rural Road Owners: </strong> http://safety.fhwa.dot.gov/local_rural/training/fhwasa1109/sec_1.cfm</li>
+              <li><strong>Good Practices: Incorporating Safety into Resurfacing and Restoration Projects:</strong> http://safety.fhwa.dot.gov/roadway_dept/strat_approach/ fhwasa07001/exec_summary.cfm</li>
+              <li><strong>Manual for Selecting Safety Improvements on High Risk Rural Roads: </strong> http://safety.fhwa.dot.gov/hsip/hrrr/manual/</li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+          <div class="txtbox">
+            <h2><strong>State Safety Resources</strong></h2>
+            <ul>
+              <li><strong>TBD:</strong> link</li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+          <div class="txtbox">
+            <h2><strong>Safety Research</strong></h2>
+            <ul>
+              <li><strong>American Association of State Highway and Transportation Officials (AASHTO) Standing Committee on Research (SCOR) and its Research Advisory Committee (RAC): </strong> http://research.transportation.org/Pages/default.aspx</li>
+              <li><strong>Southeast Transportation Consortium: </strong> http://www.ltrc.lsu.edu/stc/</li>
+              <li><strong>NCHRP Report 622: Effectiveness of Behavioral Highway Safety Countermeasures: </strong> http://onlinepubs.trb.org/onlinepubs/nchrp/nchrp_rpt_622.pdf</li>
+            </ul>
+            </div>
+          </div>
+
+     </div>
+
+
   </div>
 </section>
+</div>
+
