@@ -6,7 +6,7 @@
   background: #839EA7;
   width: 100%;
   min-height: 100%;
-  margin: 0 0 0 0;
+  margin-top: 40%;
   position: relative;
 }
 
@@ -25,11 +25,8 @@
   padding: 15px;
 }
 .slides{
-margin-top: 30%;
+margin-top: 80%;
 }
-
-
-
 
 
 .content {
