@@ -27,3 +27,24 @@
 .social-button:hover {
   opacity: 0.65;
 }
+
+.marginshift {
+  margin-top: 15%;
+  background-color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+    letter-spacing: 0.15em;
+    text-shadow: -2px 2px 0 #ccddeb;
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    font-family: "gentona",Arial,Helvetica,sans-serif;
+    color: #00529b;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-top: 0.7em;
+    text-transform: uppercase;
+}

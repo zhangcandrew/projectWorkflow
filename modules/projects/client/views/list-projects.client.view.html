@@ -1,22 +1,16 @@
+
+<div id="content-wrap">
 <section>
   <div class="page-header">
-    <h1>Projects</h1>
+    <h1>
+      <span>Projects</span>
+    </h1>
   </div>
-  <div class="list-group">
-    <a ng-repeat="project in vm.projects"
-       ui-sref="projects.view({ projectId: project._id })"
-       class="list-group-item">
-      <small class="list-group-item-text">
-        Posted on
-        <span ng-bind="project.created | date:'mediumDate'"></span>
-        by
-        <span ng-if="project.user" ng-bind="project.user.displayName"></span>
-        <span ng-if="!project.user">Deleted User</span>
-      </small>
-      <h4 class="list-group-item-heading" ng-bind="project.name"></h4>
-    </a>
-  </div>
-  <div class="alert alert-warning text-center" ng-if="vm.projects.$resolved && !vm.projects.length">
-    No Projects yet, why don't you <a ui-sref="projects.create">create one</a>?
+
+  <div>
+  	<iframe width="600" height="450" frameborder="0" style="border:0"
+	src="https://www.google.com/maps/embed/v1/view?zoom=11&center=29.6516,-82.3248&key=AIzaSyBFbN1Bt_3N3RRqjWKzNC0iAzQ5214f4aM" allowfullscreen></iframe>
   </div>
 </section>
+</div>
+
