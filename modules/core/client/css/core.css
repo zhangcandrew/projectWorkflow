@@ -9,6 +9,10 @@
   margin-top: 40%;
   position: relative;
 }
+.page-Header{
+  margin-top :15%;
+  margin-bottom: 0%;
+}
 
 .home{
   background: white;
@@ -25,7 +29,8 @@
   padding: 15px;
 }
 .slides{
-margin-top: 80%;
+margin-top: 00%;
+padding-top: '0px';
 }
 
 
