@@ -13,7 +13,42 @@ var ProjectSchema = new Schema({
   name: {
     type: String,
     default: '',
-    required: 'Please fill Project name',
+    required: 'Please fill project name',
+    trim: true
+  },
+    address: {
+    type: String,
+    default: '',
+    required: 'Please fill project address',
+    trim: true
+  },
+    description: {
+    type: String,
+    default: '',
+    required: 'Please fill project description',
+    trim: true
+  },
+    longitude: {
+    type: Number,
+    default: '',
+    required: 'Please fill project longitude',
+    trim: true
+  },
+    latitude: {
+    type: Number,
+    default: '',
+    required: 'Please fill project latitude',
+    trim: true
+  },
+    progress: {
+    type: String,
+    default: '',
+    required: 'Please select your projects current progress',
+    trim: true
+  },
+    imagelink: {
+    type: String,
+    default: '',
     trim: true
   },
   created: {
