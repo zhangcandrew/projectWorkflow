@@ -7,7 +7,7 @@
     </h1>
   </div>
   <ng-map center="[{{29.6516}},{{-82.3248}}]" zoom="12">
-    <marker ng-repeat='project in Projects' position='[{{project.latitude}},{{project.longitude}}]' visible="true" on-click="gotolink(event,article)">
+    <marker ng-repeat='project in vm.projects' position='[{{project.latitude}},{{project.longitude}}]' visible="true" on-click="gotolink(event,article)">
     </marker>
   </ng-map>
 </section>
