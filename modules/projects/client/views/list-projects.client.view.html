@@ -6,10 +6,32 @@
       <span>Projects</span>
     </h1>
   </div>
-  <ng-map center="[{{29.6516}},{{-82.3248}}]" zoom="12">
-    <marker ng-repeat='project in vm.projects' position='[{{project.latitude}},{{project.longitude}}]' visible="true" on-click="gotolink(event,article)">
-    </marker>
+  
+<div id="map">
+  <ng-map controller="ProjectsListController" center="[{{29.6516}},{{-82.3248}}]" zoom="7" >
+    
+    <marker ng-repeat="project in vm.projects | filter:myFiltering" position='[{{project.latitude}},{{project.longitude}}]' visible="true" on-click="showProject(event, project)" > 
+    	<info-window id="myInfoWindow">
+            <div ng-non-bindable>
+                <h4>{{selectedProject.name}}</h4>
+                <p>Status: {{selectedProject.progress}}</p>
+                <p>Type: {{selectedProject.projecttype}}</p>
+                <p></p>
+            </div>
+        </info-window>
+    </marker>    
   </ng-map>
+
+	<div id="filtering">
+	    <li class="no-decoration" ng-repeat="name in filterArray">
+	        <label>
+	            <input type="checkbox" ng-model="name.on" ng-change="checkChange()" />{{name.name}}</label>
+	        
+	    </li>
+	</div>
+
+</div>
+
 </section>
 </div>
 
