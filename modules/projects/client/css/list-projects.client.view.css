@@ -1,0 +1,16 @@
+/*  map, div[map] {display:block; width:600px; height:400px;}*/
+
+#map {
+	height: 550px;
+}
+
+ng-map {width: 900px; height:500px;position: absolute;}
+
+
+#filtering {
+	height: 500px;
+	width: 200px;
+	position:relative;
+    float:right;
+    background-color: gray;
+}

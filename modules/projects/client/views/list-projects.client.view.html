@@ -6,11 +6,32 @@
       <span>Projects</span>
     </h1>
   </div>
+  
+<div id="map">
+  <ng-map controller="ProjectsListController" center="[{{29.6516}},{{-82.3248}}]" zoom="7" >
+    
+    <marker ng-repeat="project in vm.projects | filter:myFiltering" position='[{{project.latitude}},{{project.longitude}}]' visible="true" on-click="showProject(event, project)" > 
+    	<info-window id="myInfoWindow">
+            <div ng-non-bindable>
+                <h4>{{selectedProject.name}}</h4>
+                <p>Status: {{selectedProject.progress}}</p>
+                <p>Type: {{selectedProject.projecttype}}</p>
+                <p></p>
+            </div>
+        </info-window>
+    </marker>    
+  </ng-map>
 
-  <div>
-  	<iframe width="600" height="450" frameborder="0" style="border:0"
-	src="https://www.google.com/maps/embed/v1/view?zoom=11&center=29.6516,-82.3248&key=AIzaSyBFbN1Bt_3N3RRqjWKzNC0iAzQ5214f4aM" allowfullscreen></iframe>
-  </div>
+	<div id="filtering">
+	    <li class="no-decoration" ng-repeat="name in filterArray">
+	        <label>
+	            <input type="checkbox" ng-model="name.on" ng-change="checkChange()" />{{name.name}}</label>
+	        
+	    </li>
+	</div>
+
+</div>
+
 </section>
 </div>
 

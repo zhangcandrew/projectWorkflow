@@ -30,6 +30,17 @@
           <input name="latitde" type="text" ng-model="vm.userproject.latitude" id="latitude" class="form-control" placeholder="Latitude" required>
         </div>
 
+                          <div class="form-group" show-errors>
+          <label class="control-label" for="projecttype">Select Your Project Type</label>
+          <select name="projecttype" ng-model="vm.userproject.projecttype" id="projecttype" class="form-control" required>
+
+              <option value="intersection">Intersection</option>
+              <option value="curve">Curve</option>
+              <option Value="pavementmarking">Pavement Marking</option>
+
+          </select>
+        </div>
+
                   <div class="form-group" show-errors>
           <label class="control-label" for="progress">Select Your Projects Progress</label>
           <select name="progress" ng-model="vm.userproject.progress" id="progress" class="form-control" required>
@@ -40,6 +51,7 @@
 
           </select>
         </div>
+
 
                   <div class="form-group" show-errors>
           <label class="control-label" for="imagelink">URL Link to an image of your project</label>
