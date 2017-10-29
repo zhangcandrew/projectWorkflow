@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--<!DOCTYPE html>
+<html lang="en">-->
 <!--<div class="back">
 Required meta tags -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<meta charset="UTF-8">-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 <script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<div class="home"></div>
-<div class = "page-Header">
-  <h1>Home</h1>
-</div>
+<script src="js/bootstrap.min.js"></script>-->
+<div id="content-wrap">
+  <div class="page-Header">
+    <h1>Home</h1>
+  </div>
 
   <!--https://www-cdn.jtvnw.net/images/twitch_logo3.jpg-->
-<div class="slides">
-  <div ng-controller="HomeController">
-      <div style="height: 305px">
+  <div class="slides">
+    <div ng-controller="HomeController">
+      <div style="">
         <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
           <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
 
             <img ng-src="{{slide.image}}" ng-style="slide.style">
-           
+
 
             <div class="carousel-caption">
               <h4>Slide {{slide.id}}</h4>
@@ -30,6 +30,7 @@ Required meta tags -->
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-6">
           <!--<button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>-->
@@ -47,7 +48,25 @@ Required meta tags -->
         </div>-->
       </div>
     </div>
-  <!--</div>-->
+
+    <!--</div>-->
+
+  </div>
+
+
+ 
+      <div class="txtbox" style="float : left;width:230px;height:500px;">
+        <h2><strong>NEWS</strong></h2>
+        <p>no news is good news</p>
+        </div>
+      
+
+      
+          <div class="txtbox" style="float : right;width:230px;height:500px;">
+            <h2><strong>Project Updates</strong></h2>
+            <p>incedible projects for all the world to see!</p>
+            </div>
+         
 
 
   <div class="info">
@@ -72,4 +91,4 @@ Required meta tags -->
 </div>
 </div>
 
-</html>
+</div>
