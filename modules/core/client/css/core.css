@@ -19,7 +19,7 @@
 .slides{
 width: 600px;
 position: absolute;
-top: 350px;
+top: 300px;
 left : 50%;
 margin-left: -300px;
 
@@ -32,18 +32,27 @@ margin-left: -300px;
   background: #839EA7;
   width: 100%;
   min-height: 100%;
-  margin-top: 50%;
+  margin-top: 42%;
   position: relative;
 }
 
-/*.txtbox {
-	margin-top: 15px;
+.txtbox1 {
+	margin-top: 10px;
 	border-radius: 5px;
 	background: #EAEAEA;
 	padding: 10px;
 	height: 355px;
 	border: 1px solid #6495ED;
-}*/
+}
+
+.txtbox2 {
+	margin-top: 10px;
+	border-radius: 5px;
+	background: #EAEAEA;
+	padding: 10px;
+	height: 355px;
+	border: 1px solid #6495ED;
+}
 
 .content {
   margin-top: 50px;
