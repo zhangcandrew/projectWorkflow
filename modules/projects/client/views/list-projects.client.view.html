@@ -1,3 +1,6 @@
+<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7aarZu53xKNP4MHGIEbnyKp8X7j_vzII&callback=initMap">
+    </script>
 
 <div id="content-wrap">
 <section>
@@ -11,24 +14,27 @@
   <ng-map controller="ProjectsListController" center="[{{29.6516}},{{-82.3248}}]" zoom="7" >
     
     <marker ng-repeat="project in vm.projects | filter:myFiltering" position='[{{project.latitude}},{{project.longitude}}]' visible="true" on-click="showProject(event, project)" > 
-    	<info-window id="myInfoWindow">
+    </marker> 
+
+   	<info-window id="myInfoWindow">
             <div ng-non-bindable>
                 <h4>{{selectedProject.name}}</h4>
                 <p>Status: {{selectedProject.progress}}</p>
                 <p>Type: {{selectedProject.projecttype}}</p>
                 <p></p>
             </div>
-        </info-window>
-    </marker>    
+    </info-window>
+
   </ng-map>
 
 	<div id="filtering">
-	    <li class="no-decoration" ng-repeat="name in filterArray">
+	    <li style="list-style-type:none" class="no-decoration" ng-repeat="name in filterArray">
 	        <label>
 	            <input type="checkbox" ng-model="name.on" ng-change="checkChange()" />{{name.name}}</label>
-	        
 	    </li>
 	</div>
+
+</div>
 
 </div>
 

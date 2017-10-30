@@ -20,7 +20,7 @@
   $scope.filterArray = [{ name: "proposed", on: false}, {name:"completed", on: false}, {name:"ongoing", on: false}, {name:"pavementmarking", on: false}, {name:"intersection", on: false}, {name:"curve", on: false}];
   $scope.showAll = true;
 
-  $scope.checkChange = function() {
+  $scope.checkChange = function(event,project) {
         for(name in $scope.filterArray){
             if($scope.filterArray[name].on){
                 $scope.showAll = false;
