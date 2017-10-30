@@ -1,19 +1,22 @@
 /*  map, div[map] {display:block; width:600px; height:400px;}*/
 
 #map {
-	height: 550px;
+	height: 650px;
+	width: 1100px;
+	overflow:visible;
 }
 
-ng-map {width: 900px; height:500px;position: absolute;}
+ng-map {width: 1100px; height:550px;position: absolute;overflow:visible;}
 
 
 #filtering {
-	height: 500px;
+
+	height: 200px;
 	width: 200px;
 	position:relative;
-    float:right;
-   /* background-color: #dcdcdc;*/
-  /*  outline-color: #00529b;
-    outline-width: 5px;*/
+	margin-top: 75px;
+	margin-left: 10px;
+    float:left;
+
 }
 
