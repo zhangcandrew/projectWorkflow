@@ -1,12 +1,19 @@
 /*  map, div[map] {display:block; width:600px; height:400px;}*/
 
 #map {
-	height: 550px;
+	height: 650px;
 	width: 1100px;
 	overflow:visible;
 }
 
 ng-map {width: 1100px; height:550px;position: absolute;overflow:visible;}
+
+@media only screen 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+  	ng-map {width: 300px; height:550px;position: absolute;overflow:visible;}
+
+}
 
 
 #filtering {
@@ -19,5 +26,3 @@ ng-map {width: 1100px; height:550px;position: absolute;overflow:visible;}
     float:left;
 
 }
-
-
