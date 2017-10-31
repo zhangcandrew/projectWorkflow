@@ -12,7 +12,7 @@
   </div>
   
 
-<div id="map" z-index:1>
+<div id="map" z-index:1 height: 650px; width: 1100px;>
   <ng-map controller="ProjectsListController" center="[{{29.6516}},{{-82.3248}}]" zoom="7">
     
     <marker ng-repeat="project in vm.projects | filter:myFiltering" position='[{{project.latitude}},{{project.longitude}}]' visible="true" on-click="showProject(event, project)" > 
@@ -37,7 +37,7 @@
 	    </li>
 	</div>
 
-  
+
 </div>
 
 
