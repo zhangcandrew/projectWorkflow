@@ -2,7 +2,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7aarZu53xKNP4MHGIEbnyKp8X7j_vzII&callback=initMap">
     </script>
 <script src="https://cdn.rawgit.com/connected-web/web-component-js/1.2.6/lib/web-component.js"></script> -->
-<script type="text/javascript" src="//maps.google.com/maps/api/js"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3&key=AIzaSyA35fx5-G1qvTKr6SRhPv9q5pLen84nwp0&libraries=placeses,visualization,drawing,geometry,places"></script>
 <div id="content-wrap">
 <section>
   <div class="page-header">
@@ -12,7 +12,7 @@
   </div>
   
 
-<div id="map" map-lazy-load="https://maps.google.com/maps/api/js"
+<div id="map" map-lazy-load="https://maps.google.com/maps/api/js?v=3&key=AIzaSyA35fx5-G1qvTKr6SRhPv9q5pLen84nwp0"
       map-lazy-load-params="{{vm.googleMapsUrl}}">
   <ng-map controller="ProjectsListController" center="[{{29.6516}},{{-82.3248}}]" zoom="7">
     
