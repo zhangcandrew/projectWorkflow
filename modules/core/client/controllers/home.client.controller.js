@@ -21,7 +21,7 @@
       slides.push({
         image: gatorSlides[currIndex],
         style:{
-          width: '600px',
+          width: '1030px',
           height: '400px',
           
         },
