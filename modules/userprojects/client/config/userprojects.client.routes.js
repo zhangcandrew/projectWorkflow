@@ -61,13 +61,13 @@
           pageTitle: 'Userproject {{ userprojectResolve.name }}'
         }
       })
-      .state('userprojectsadmin.list', {
-        url: '',
-        templateUrl: 'modules/userprojects/client/views/admin-list-userprojects.client.view.html',
-        controller: 'UserprojectsListController',
+        .state('userprojects.map', {
+        url: '/userprojects/map',
+        templateUrl: 'modules/userprojects/client/views/project-map.client.view.html',
+        controller: 'UserprojectsMapController',
         controllerAs: 'vm',
         data: {
-          pageTitle: 'User Projects List'
+          pageTitle: 'Projects Map'
         }
       });
   }
