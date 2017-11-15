@@ -11,5 +11,6 @@
     var vm = this;
 
     vm.userprojects = UserprojectsService.query();
+
   }
 }());

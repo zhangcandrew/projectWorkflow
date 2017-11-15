@@ -40,5 +40,11 @@
     state: 'userprojects.create'
 
     });
+
+            menuService.addMenuItem('topbar', {
+      title: 'Projects Map',
+      state: 'userprojects.map',
+      roles: ['*']
+    });
   }
 }());

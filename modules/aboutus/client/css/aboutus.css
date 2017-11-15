@@ -6,6 +6,7 @@
 	margin-top: 15%;
 }
 
+
 @keyframes slider {
 
 	0% {
@@ -143,6 +144,15 @@ h1, h2 {
 	border-radius: 5px;
 	background: #EAEAEA;
 	padding: 10px;
-	height: 355px;
+	height: 555px;
 	border: 1px solid #6495ED;
+}
+
+.txtbox p {
+	font-size: 20px;
+
+}
+
+.txtbox li {
+	font-size: 18px;
 }

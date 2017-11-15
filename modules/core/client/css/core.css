@@ -105,16 +105,27 @@ a:hover .header-profile-image {
 
 
 .nav-style {
+
   background-color: #00529b;
   color: white;
   padding: 0px;
+
 }
 
 .logo-style {
+
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+
   background-color: white;
   padding: 10px;
   color: #00529b;
   padding-left:100px;
+}
+
+.nav-up {
+  top:-40px;
 }
 
 .home-style {
