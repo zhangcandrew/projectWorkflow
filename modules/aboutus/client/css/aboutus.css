@@ -3,7 +3,7 @@
 }
 
 .page-header {
-	margin-top: 15%;
+	margin-top: 10%;
 }
 
 
@@ -139,20 +139,24 @@ h1, h2 {
 
 }
 
-.txtbox {
+.aboutustxtbox {
 	margin-top: 15px;
 	border-radius: 5px;
 	background: #EAEAEA;
 	padding: 10px;
-	height: 555px;
-	border: 1px solid #6495ED;
+	height: 585px;
+	border: 8px solid #FF9912;
 }
 
-.txtbox p {
+.aboutustxtbox p {
 	font-size: 20px;
 
 }
 
-.txtbox li {
+.aboutustxtbox li {
 	font-size: 18px;
+}
+
+.about-img {
+
 }

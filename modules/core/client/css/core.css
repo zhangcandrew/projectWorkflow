@@ -1,6 +1,6 @@
 
 .page-Header{
-  margin-top :15%;
+  margin-top :10%;
   margin-bottom: 0%;
 }
 
@@ -19,7 +19,7 @@
 .slides{
 width: 830px;
 position: absolute;
-top: 300px;
+top: 235px;
 left : 50%;
 margin-left: -300px;
 
@@ -114,20 +114,13 @@ a:hover .header-profile-image {
 
 .logo-style {
 
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%;
-
   background-color: white;
   padding: 10px;
   color: #00529b;
   padding-left:100px;
 }
 
-.nav-up {
-  top:-40px;
-}
 
 .home-style {
- margin-top:15%;
+ margin-top:10%;
 }
