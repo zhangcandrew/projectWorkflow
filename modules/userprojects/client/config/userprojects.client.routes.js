@@ -1,3 +1,5 @@
+//These are the routes for the user project module. The map is also routed from here.
+
 (function () {
   'use strict';
 
@@ -61,6 +63,7 @@
           pageTitle: 'Userproject {{ userprojectResolve.name }}'
         }
       })
+      //This is the route setup for the map
         .state('userprojects.map', {
         url: '/userprojects/map',
         templateUrl: 'modules/userprojects/client/views/project-map.client.view.html',

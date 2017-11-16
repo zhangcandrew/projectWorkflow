@@ -1,3 +1,4 @@
+//roles can be set to 'user', 'admin', both, or '*'. '*' Represents any web app user even those not signed in.
 (function () {
   'use strict';
 
@@ -40,7 +41,7 @@
     state: 'userprojects.create'
 
     });
-
+          //Add menu item for the map
             menuService.addMenuItem('topbar', {
       title: 'Projects Map',
       state: 'userprojects.map',
