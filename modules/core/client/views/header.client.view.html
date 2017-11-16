@@ -1,11 +1,10 @@
+<!--This is the header file, which contains the logo as well as the navigation bar -->
 
-
+<!--Style div tag for the logo image -->
 <div class="logo-style">
-<div class="nav-down">
 
 <a ui-sref="home"><img src="https://imgur.com/czLMNfJ.png" style="width:333px;height:90px;"></a>
 
-</div>
 </div>
 
 <div class="nav-style">
@@ -17,6 +16,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
+    <!--Home button; currently displayed as a bootstrap glyphicon -->
     <a ui-sref="home" class="navbar-brand"><span class = "glyphicon glyphicon-home"></span></a>
   </div>
   <nav class="navbar-collapse" uib-collapse="!vm.isCollapsed" role="navigation">
@@ -31,6 +31,7 @@
         <a ng-switch-default ui-sref="{{item.state}}" ng-bind="item.title"></a>
       </li>
     </ul>
+    <!--SignUp/In class. Uses Angular anchor tags -->
     <ul class="nav navbar-nav navbar-right" ng-hide="vm.authentication.user">
       <li ui-sref-active="active">
         <a ui-sref="authentication.signup">Sign Up</a>

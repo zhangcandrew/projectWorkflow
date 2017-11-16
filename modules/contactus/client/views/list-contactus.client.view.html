@@ -1,31 +1,36 @@
+<!--This is the Contact Us Page. The top tag wraps all content for styling purposes -->
 <div id="content-wrap">
 <section>
+<!--This is the page header that is displayed -->
   <div class="page-header">
     <h1>Contact Us</h1>
 
   </div>
-
-  <img src="https://www.fhwa.dot.gov/innovation/everydaycounts/edc-2/images/banner-intersection-interchange-geometrics.jpg" style="width: 100%">
+<!--Image located towards the top of the page -->
+  <img class="img-style" src="https://www.fhwa.dot.gov/innovation/everydaycounts/edc-2/images/banner-intersection-interchange-geometrics.jpg" style="width: 100%">
 
   <div class="list-group">
     <a ng-repeat="contactu in vm.contactus"
        ui-sref="contactus.view({ contactuId: contactu._id })"
        class="list-group-item"> </a>
 
+<!--Starting a bootstrap row/column set up for text content -->
           <div class="row">
-
+              <!--Left most text box -->
               <div class="col-md-4">
               <div class="contactTextBox">
                 <h2><strong>How to Find US</strong></h2>
                 <p><span class = "glyphicon glyphicon-home"></span> | The TSC is located within the Florida T2 Center, which is located at the University of Florida's East Campus</p>
                 </div>
               </div>
+              <!--middle text box -->
               <div class="col-md-4">
               <div class="contactTextBox">
                 <h2><strong>Address</strong></h2>
                 <p><span class = "glyphicon glyphicon-map-marker"></span> | 2100 NE Waldo Road, Suite 106, Gainesville, FL 32609</p>
                 </div>
               </div>
+              <!--Right most text box -->
                 <div class="col-md-4">
                 <div class="contactTextBox">
                 <h2><strong>Contact Info</strong></h2>

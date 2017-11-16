@@ -9,10 +9,14 @@
 	background: #EAEAEA;
 	padding: 10px;
 	height: 195px;
-	border: 1px solid #6495ED;
+	border: 2px solid #00529b;
 }
 
 .contactTextBox p {
 	font-size: 20px;
 
+}
+
+.img-style {
+	border-radius: 10px;
 }
