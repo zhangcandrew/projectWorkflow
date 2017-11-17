@@ -16,13 +16,14 @@ ng-map {width: 1100px; height:550px;position: absolute;overflow:visible;}
 }
 
 
-#filtering {
-
-	height: 200px;
+#filtering {	
+	height: 250px;
 	width: 200px;
 	position:relative;
-	margin-top: 75px;
+	margin-top: 0px;
 	margin-left: 10px;
-    float:left;
-
+    float:right;
+    background-color: white;
+    outline-width: 1px;
+    outline-color: black;
 }

@@ -19,6 +19,7 @@
 
   $scope.filterArray = [{ name: "proposed", on: false}, {name:"completed", on: false}, {name:"ongoing", on: false}, {name:"pavementmarking", on: false}, {name:"intersection", on: false}, {name:"curve", on: false}];
   $scope.showAll = true;
+  //window.frames["projects_frame"].document.getElementById("filtering").style.display = "none";
 
   $scope.checkChange = function(event,project) {
         for(name in $scope.filterArray){
@@ -53,6 +54,16 @@
        return sel;
 
     };
+
+
+  $scope.openFiltering = function() {
+     // alert(window.frames["projects_frame"]);
+      document.getElementById("filtering").style.display = "block";
+  };
+
+  $scope.closeFiltering = function() {
+      document.getElementById("filtering").style.display = "none";
+  };
 
   };
 

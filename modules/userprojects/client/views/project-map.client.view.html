@@ -42,14 +42,16 @@ For the most part anything named "project" in the old version will have to be na
 
   </ng-map>
 
+<div class="subscribe">
+  <button id="buttondropdown" type="button" z-index:2>Filter</button>
 
 	<div id="filtering" z-index:2>
-	    <li style="list-style-type:none" class="no-decoration" ng-repeat="name in filterArray">
+	    <li id="filtering-2" style="list-style-type:none" ng-repeat="name in filterArray">
 	        <label>
 	            <input type="checkbox" ng-model="name.on" ng-change="checkChange()" />{{name.name}}</label>
 	    </li>
 	</div>
-
+</div>
   
 </div>
 
