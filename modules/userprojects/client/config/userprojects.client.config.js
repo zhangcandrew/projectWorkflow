@@ -43,7 +43,7 @@
     });
           //Add menu item for the map
             menuService.addMenuItem('topbar', {
-      title: 'Projects Map',
+      title: 'Projects',
       state: 'userprojects.map',
       roles: ['*']
     });

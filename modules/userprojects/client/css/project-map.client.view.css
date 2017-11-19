@@ -4,6 +4,7 @@
 	height: 650px;
 	width: 1100px;
 	overflow:visible;
+	
 }
 
 ng-map {width: 1100px; height:550px;position: absolute;overflow:visible;}
