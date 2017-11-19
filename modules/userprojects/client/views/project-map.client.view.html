@@ -24,7 +24,7 @@ For the most part anything named "project" in the old version will have to be na
 
 <div id="map" map-lazy-load="https://maps.google.com/maps/api/js?v=3&key=AIzaSyA35fx5-G1qvTKr6SRhPv9q5pLen84nwp0"
       map-lazy-load-params="{{vm.googleMapsUrl}}">
-  <ng-map controller="UserprojectsMapController" center="[{{29.6516}},{{-82.3248}}]" zoom="7">
+  <ng-map controller="UserprojectsMapController" center="[{{29.6516}},{{-82.3248}}]" zoom="7" id="actualmap">
     
     <marker ng-repeat="userproject in vm.userprojects  | filter:myFiltering" position='[{{userproject.latitude}},{{userproject.longitude}}]' visible="true" on-click="showProject(event, userproject)" > 
     </marker> 

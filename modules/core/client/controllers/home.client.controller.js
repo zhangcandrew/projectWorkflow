@@ -15,7 +15,7 @@
     var slides = $scope.slides = [];
     var currIndex = 0;  
     var gatorSlides = $scope.gatorSlides = ['https://i.imgur.com/Jvc7GUS.png', 'https://i.imgur.com/qVr0EGd.jpg', 'https://i.imgur.com/mtgcd80.jpg','https://i.imgur.com/9Zml2dR.jpg'];
-  
+
     $scope.addSlide = function() {
       var newWidth = 600 + slides.length + 1;
       slides.push({
