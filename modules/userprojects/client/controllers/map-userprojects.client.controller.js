@@ -17,7 +17,7 @@
 	            $scope.map.showInfoWindow('myInfoWindow', this);
 	        };
 
-  $scope.filterArray = [{ name: "Proposed", on: false}, {name:"Completed", on: false}, {name:"Ongoing", on: false}, {name:"Pavement Marking", on: false}, {name:"Intersection", on: false}, {name:"Curve", on: false}];
+  $scope.filterArray = [{ name: "Proposed", on: false}, {name:"Completed", on: false}, {name:"In Progress", on: false}, {name:"Pavement Marking", on: false}, {name:"Intersection", on: false}, {name:"Curve", on: false}];
   $scope.showAll = true;
 
   $scope.checkChange = function(event,userproject) {
