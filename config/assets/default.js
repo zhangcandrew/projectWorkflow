@@ -26,7 +26,8 @@ module.exports = {
         'public/lib/owasp-password-strength-test/owasp-password-strength-test.js',
         'public/lib/angular-ui-utils/ui-utils.js',
         'maps.google.com/maps/api/js', // I'm using a CDN
-        'public/lib/ngmap/build/scripts/ng-map.min.js'
+        'public/lib/ngmap/build/scripts/ng-map.min.js',
+        'public/lib/ngtweet/dist/ngtweet.min.js'
         // endbower
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']
