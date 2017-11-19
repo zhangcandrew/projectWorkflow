@@ -61,7 +61,11 @@ section{
     background: #EAEAEA;
     padding: 10px;
     height: 395px;
-    border: 1px solid #6495ED;
+    border: 2px solid #00529b;
+}
+
+.txtbox li {
+    font-size: 18px;
 }
 
 
