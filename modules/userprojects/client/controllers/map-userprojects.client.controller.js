@@ -17,7 +17,7 @@
 	            $scope.map.showInfoWindow('myInfoWindow', this);
 	        };
 
-  $scope.filterArray = [{ name: "Proposed", on: false}, {name:"Completed", on: false}, {name:"Ongoing", on: false}, {name:"Pavement Marking", on: false}, {name:"Intersection", on: false}, {name:"Curve", on: false}];
+  $scope.filterArray = [{ name: "Proposed", on: false}, {name:"Completed", on: false}, {name:"In Progress", on: false}, {name:"Pavement Marking", on: false}, {name:"Intersection", on: false}, {name:"Curve", on: false}];
   $scope.showAll = true;
 
   $scope.checkChange = function(event,userproject) {
@@ -28,19 +28,16 @@
             }
         }
         $scope.showAll = true;
-        //showProject(event, project);
     };
 
 
    $scope.myFiltering = function(a) {
-       //alert(hi);
       if($scope.showAll) { return true; }
        
        var sel = false;
        
         for(name in $scope.filterArray){
             var t = $scope.filterArray[name];
-            //console.log(t);
             if(t.on){
                 if(a.progress.indexOf(t.name) == -1 && a.projecttype.indexOf(t.name) == -1){
                     return false;
