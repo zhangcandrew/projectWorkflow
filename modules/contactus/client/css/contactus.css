@@ -3,11 +3,20 @@
 	padding: 15px;
 }
 
-.txtbox2 {
+.contactTextBox {
 	margin-top: 15px;
 	border-radius: 5px;
 	background: #EAEAEA;
 	padding: 10px;
-	height: 155px;
-	border: 1px solid #6495ED;
+	height: 195px;
+	border: 2px solid #00529b;
+}
+
+.contactTextBox p {
+	font-size: 20px;
+
+}
+
+.img-style {
+	border-radius: 10px;
 }

@@ -1,3 +1,5 @@
+//These are the routes for the user project module. The map is also routed from here.
+
 (function () {
   'use strict';
 
@@ -11,11 +13,11 @@
     $stateProvider
       .state('userprojects', {
         abstract: true,
-        url: '/userprojects',
+        url: '',
         template: '<ui-view/>'
       })
       .state('userprojects.list', {
-        url: '',
+        url: '/userprojects',
         templateUrl: 'modules/userprojects/client/views/list-userprojects.client.view.html',
         controller: 'UserprojectsListController',
         controllerAs: 'vm',
@@ -61,13 +63,14 @@
           pageTitle: 'Userproject {{ userprojectResolve.name }}'
         }
       })
-      .state('userprojectsadmin.list', {
-        url: '',
-        templateUrl: 'modules/userprojects/client/views/admin-list-userprojects.client.view.html',
-        controller: 'UserprojectsListController',
+      //This is the route setup for the map
+        .state('userprojects.map', {
+        url: '/userprojects/map',
+        templateUrl: 'modules/userprojects/client/views/project-map.client.view.html',
+        controller: 'UserprojectsMapController',
         controllerAs: 'vm',
         data: {
-          pageTitle: 'User Projects List'
+          pageTitle: 'Projects Map'
         }
       });
   }

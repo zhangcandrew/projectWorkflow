@@ -9,6 +9,7 @@
 
   function menuConfig(menuService) {
     // Set top bar menu items
+    /*
     menuService.addMenuItem('topbar', {
       title: 'Projects',
       state: 'projects.list',
@@ -27,5 +28,6 @@
       state: 'projects.create',
       roles: ['user']
     });
+    */
   }
 }());

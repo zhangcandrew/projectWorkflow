@@ -1,78 +1,42 @@
+<!--This is the About Us Page. The top tag wraps all content for styling purposes -->
 <div id="content-wrap">
 <section>
 <div class="style-container">
-
+<!--This is the page header that is displayed -->
   <div class="page-header">
    
     <h1>About Us</h1>
     
   </div>
-
-  <img src="https://www.fhwa.dot.gov/innovation/everydaycounts/edc-2/images/banner-intersection-interchange-geometrics.jpg" style="width: 100%">
-
-<!--
-  <div class="slider-container"> 
+<!--Image located towards the top of the page -->
   
-  <img class="myslider" src="https://cdn.rentcafe.com/dmslivecafe/3/537863/web_LyonsCorner_01%20EDIT.jpg" style="width: 100%">
-  <img class="myslider" src="http://img12.cinccdn.com/201703/MLS/FMLS/295/FMLS-RESALL-40812295-1.jpg" style="width: 100%">
-  <img class="myslider" src="http://images.accesswdun.com/uploads/articles/2015/344947/howl-o-ween-2015-3_p3.jpg" style="width: 100%">
-  <img class="myslider" src="https://cdn.rentcafe.com/dmslivecafe/3/537862/web_CampusView_01%20EDIT.jpg" style="width: 100%">
-  <img class="myslider" src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/11c5/5c111501ed420a7be783a7c53ed4e4b0/b032" style="width: 100%">
-
-  <a class="icon left" onclick="getdiv(-1)">&#10094</a>
-  <a class="icon right" onclick="getdiv(1)">&#10095</a>
-  </div>
-
-
-  <script>
-    var index =1;
-    showdiv(index);
-
-    function getdiv(n) {
-      showdiv(index +=n);
-    }
-
-    function showdiv(n) {
-      var i;
-      var a = document.getElementsByClassName("myslider");
-
-      if(n > a.length){
-        index = 1;
-      }
-      if(n<1) {
-        index = a.length;
-      }
-      for(i=0; i<a.length; i++){
-        a[i].style.display = "none";
-      }
-      a[index-1].style.display = "block";
-    }
-  </script>
-
--->
+  <img class="img-style" src="https://www.fhwa.dot.gov/innovation/everydaycounts/edc-2/images/banner-intersection-interchange-geometrics.jpg" style="width: 100%">
+  
 
   <div class="list-group">
     <a ng-repeat="aboutu in vm.aboutus"
        ui-sref="aboutus.view({ aboutuId: aboutu._id })"
        class="list-group-item"></a>
     </a>
-
+<!--Starting a bootstrap row/column set up for text content -->
       <div class="row">
-
+      <!--Left most text box -->
           <div class="col-md-4">
-          <div class="txtbox">
+          <div class="aboutustxtbox">
             <h2><strong>Our Focus</strong></h2>
             <p>The focus of TSC is on safety-related research, training, and outreach that has increased over the past five years as the FDOT has affirmed its commitment to reducing the number of highway crashes which result in fatalities and serious injuries in the state. This commitment and attention resulted in the development of a State Strategy on Highway Safety -Destination Zero Deaths (DZD) which is congruent with the National Towards Zero Deaths Strategy.</p>
             </div>
           </div>
+          <!--Middle text box -->
           <div class="col-md-4">
-          <div class="txtbox">
+          <div class="aboutustxtbox">
             <h2><strong>Our History</strong></h2>
             <p>TSC established in 2015 and is housed with the Technology and Transfer Center (T2 Center) at the University of Florida. The TSC resides under the umbrella of the University of Florida Transportation Institute (UFTI). TSC leverages its position to provide access to academic partners and training facilities and enables coordination of safety research, workforce development, and stakeholder outreach across the many entities involved in the Florida Strategic Highway Safety Plan (SHSP). TSC is funded by the FDOT. </p>
             </div>
           </div>
+          <!--Right most text box -->
           <div class="col-md-4">
-          <div class="txtbox">
+          <div class="aboutustxtbox">
             <h2><strong>Our Plans</strong></h2>
             <p>The TSC plans to build on the successes of the Local Technical Assistance Program (LTAP). There are four major initiatives managed through the Safety Center:
             <ul>

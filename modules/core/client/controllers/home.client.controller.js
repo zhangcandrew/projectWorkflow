@@ -21,8 +21,9 @@
       slides.push({
         image: gatorSlides[currIndex],
         style:{
-          width: '1140px',
-          height: '700px'
+          width: '1030px',
+          height: '400px',
+          
         },
         /*image: '//unsplash.it/' + newWidth + ,'/300',*/
         //text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],

@@ -5,7 +5,7 @@
 
   <h2>Proposed Projects</h2>
   <div class="list-group">
-    <a ng-repeat="userproject in vm.userprojects | filter : {progress: 'proposed'} : true"
+    <a ng-repeat="userproject in vm.userprojects | filter : {progress: 'Proposed'} : true"
        ui-sref="userprojects.view({ userprojectId: userproject._id })"
        class="list-group-item">
       <small class="list-group-item-text">
@@ -21,7 +21,7 @@
   <h2>____________________________________________________________________</h2>
 <h2>In Progress Projects</h2>
     <div class="list-group">
-    <a ng-repeat="userproject in vm.userprojects | filter : {progress: 'inprogress'} : true"
+    <a ng-repeat="userproject in vm.userprojects | filter : {progress: 'In Progress'} : true"
        ui-sref="userprojects.view({ userprojectId: userproject._id })"
        class="list-group-item">
       <small class="list-group-item-text">
@@ -37,7 +37,7 @@
   <h2>____________________________________________________________________</h2>
 <h2>Completed Projects</h2>
     <div class="list-group">
-    <a ng-repeat="userproject in vm.userprojects | filter : {progress: 'completed'} : true"
+    <a ng-repeat="userproject in vm.userprojects | filter : {progress: 'Completed'} : true"
        ui-sref="userprojects.view({ userprojectId: userproject._id })"
        class="list-group-item">
       <small class="list-group-item-text">
@@ -54,4 +54,5 @@
   <div class="alert alert-warning text-center" ng-if="vm.userprojects.$resolved && !vm.userprojects.length">
     No User project yet, why don't you <a ui-sref="userprojects.create">create one</a>?
   </div>
+
 </section>

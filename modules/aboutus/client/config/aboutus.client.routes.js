@@ -33,7 +33,7 @@
         },
         data: {
           roles: ['user', 'admin'],
-          pageTitle: 'Aboutus Create'
+          pageTitle: 'About Us Create'
         }
       })
       .state('aboutus.edit', {

@@ -2,6 +2,7 @@
 <section>
   <div class="page-header">
     <h1 ng-bind="vm.userproject.name"></h1>
+    <h2 ng-bind="vm.userproject.projecttype"></h2>
 
         <div class="row">
 
@@ -26,7 +27,7 @@
             </div>
 
                         <div class="col-md-4">
-            <img ng-src="vm.userproject.imagelink"/>
+            <img ng-src="{{vm.userproject.imagelink}}" height= "350" width ="450" />
             </div>
         </div>
   
