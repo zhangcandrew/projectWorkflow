@@ -13,7 +13,6 @@ ng-map {width: 1100px; height:550px;position: absolute;overflow:visible;}
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
   	ng-map {width: 300px; height:550px;position: absolute;overflow:visible;}
-  	#map {width: 300px; height:550px;position: absolute;overflow:visible;}
 }
 
 
