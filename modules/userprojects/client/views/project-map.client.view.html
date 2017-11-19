@@ -31,11 +31,12 @@ For the most part anything named "project" in the old version will have to be na
 
    	<info-window id="myInfoWindow">
    	
-            <div ng-non-bindable>
-                <h4>{{selectedProject.name}}</h4>
-                <p>Status: {{selectedProject.progress}}</p>
-                <p>Type: {{selectedProject.projecttype}}</p>
-                <p>Description: {{selectedProject.description}}</p>
+            <div ng-non-bindable style='width:400px;height:500px'>
+                <h4><b>{{selectedProject.name}}</b></h4>
+                <p><b>Status:</b> {{selectedProject.progress}}</p>
+                <p><b>Type:</b> {{selectedProject.projecttype}}</p>
+                <p><b>Description:</b> {{selectedProject.description}}</p>
+                <img ng-src="{{selectedProject.imagelink}}" height= "250" width ="350" />
             </div>
 
     </info-window>
