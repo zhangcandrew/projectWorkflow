@@ -1,3 +1,4 @@
+<!-- This form is used to both create new projects and edit existing ones. --> 
 <section>
   <div class="page-header">
     <h1>{{vm.userproject._id ? 'Edit User project' : 'New User project'}}</h1>
@@ -29,7 +30,7 @@
           <label class="control-label" for="latitude">Latitude</label>
           <input name="latitde" type="text" ng-model="vm.userproject.latitude" id="latitude" class="form-control" placeholder="Latitude" required>
         </div>
-
+        <!-- This is a drop down menu used to restrict user input -->
                           <div class="form-group" show-errors>
           <label class="control-label" for="projecttype">Select Your Project Type</label>
           <select name="projecttype" ng-model="vm.userproject.projecttype" id="projecttype" class="form-control" required>
@@ -40,7 +41,7 @@
 
           </select>
         </div>
-
+        <!-- This is a drop down menu used to restrict user input -->
                   <div class="form-group" show-errors>
           <label class="control-label" for="progress">Select Your Projects Progress</label>
           <select name="progress" ng-model="vm.userproject.progress" id="progress" class="form-control" required>
