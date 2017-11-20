@@ -12,14 +12,19 @@
 
     vm.userprojects = UserprojectsService.query();
 
+    //show info window if selected / clicked for details on the project 
     $scope.showProject = function(event, userproject) {
 	            $scope.selectedProject = userproject;
 	            $scope.map.showInfoWindow('myInfoWindow', this);
 	        };
 
+  // holds each of the types to filter by to be used in the function to check which should be on
   $scope.filterArray = [{ name: "Proposed", on: false}, {name:"Completed", on: false}, {name:"In Progress", on: false}, {name:"Pavement Marking", on: false}, {name:"Intersection", on: false}, {name:"Curve", on: false}];
+  
+  //must be set to true in the beginning before any filtering so that all are shown if no filters are chosen
   $scope.showAll = true;
 
+  //function to actually filter each marker based on attributes checked
   $scope.myFiltering = function(a){
       if($scope.showAll) { return true; }
        
@@ -62,6 +67,7 @@
        return sel;
   };
 
+  // checks to see if filters are used, if not, display all, if filters used, display all is false 
   $scope.checkChange = function(event,userproject) {
         for(name in $scope.filterArray){
             if($scope.filterArray[name].on){
