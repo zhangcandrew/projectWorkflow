@@ -1,13 +1,4 @@
-<!--<!DOCTYPE html>
-<html lang="en">-->
-<!--<div class="back">
-Required meta tags -->
-<!--<meta charset="UTF-8">-->
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!-- Bootstrap -->
-<!--<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>-->
+
 <script src="https://maps.google.com/maps/api/js?v=3&key=AIzaSyA35fx5-G1qvTKr6SRhPv9q5pLen84nwp0&libraries=placeses,visualization,drawing,geometry,places"></script>
 
 <div id="content-wrap">
@@ -18,7 +9,9 @@ Required meta tags -->
     <h1>Home</h1>
   </div>
 
+<!-- This holds the twitter timeline div and slideshow- each their own column-->
 <div class="row">
+      <!-- Twitter timeline column-->
       <div class="col-md-2">
               <twitter-timeline style="float:left;width:235px; height: 410px; overflow-y: hidden; padding: 10px;">
                 <a class="twitter-timeline"
@@ -27,7 +20,7 @@ Required meta tags -->
                 </a>
             <twitter-timeline>
       </div>
-  <!--https://www-cdn.jtvnw.net/images/twitch_logo3.jpg-->
+    <!-- Slideshow div here- change photos from arrary in corresponding js controller file -->
     <div class="col-md-10">
       <div class="slides">
         <div ng-controller="HomeController">
@@ -47,7 +40,7 @@ Required meta tags -->
   </div>
 </div>
 
-      
+<!-- "About us" div here- can change paragraph text in white! -->      
 <div class="col-md-12">
   <div class="info">
       <h2 align="left"><strong>About the Center:</strong></h2>
