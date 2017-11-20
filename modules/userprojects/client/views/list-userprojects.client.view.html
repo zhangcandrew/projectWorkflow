@@ -1,9 +1,11 @@
+<!-- This view is used to list the projects from the database; they are organized by their stage i.e. proposed, in progress, or completed -->
 <section>
   <div class="page-header">
     <h1>User Projects</h1>
   </div>
 
   <h2>Proposed Projects</h2>
+  <!-- They ng-repeat filter command is used to sort the projects.-->
   <div class="list-group">
     <a ng-repeat="userproject in vm.userprojects | filter : {progress: 'Proposed'} : true"
        ui-sref="userprojects.view({ userprojectId: userproject._id })"
@@ -50,7 +52,7 @@
       <h4 class="list-group-item-heading" ng-bind="userproject.name"></h4>
     </a>
   </div>
-
+<!-- This will display if no projects have been created and stored in the database-->
   <div class="alert alert-warning text-center" ng-if="vm.userprojects.$resolved && !vm.userprojects.length">
     No User project yet, why don't you <a ui-sref="userprojects.create">create one</a>?
   </div>

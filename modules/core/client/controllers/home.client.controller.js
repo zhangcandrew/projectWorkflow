@@ -14,6 +14,8 @@
     $scope.active = 0;
     var slides = $scope.slides = [];
     var currIndex = 0;  
+
+    //input links to images here to be displayed- works for 4 images and jpg files in array below
     var gatorSlides = $scope.gatorSlides = ['https://i.imgur.com/mtgcd80.jpg','https://i.imgur.com/9Zml2dR.jpg', 'https://i.imgur.com/vs3C2bq.jpg', 'https://i.imgur.com/4vReQRP.jpg'];
 
     $scope.addSlide = function() {
