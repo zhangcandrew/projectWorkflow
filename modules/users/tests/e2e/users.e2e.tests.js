@@ -25,6 +25,26 @@ describe('Users E2E Tests:', function () {
     password: 'P@$$w0rd!!'
   };
 
+  var newProject1 = {
+      name: 'testProject',
+      address: '1234 testing st',
+      description: 'this intersection is not real',
+      longitude: '-81.611738',
+      latitude: '30.3004161',
+      projType: 'Intersection',
+      progress: 'Proposed',
+      projImage: ''
+    }
+
+    //helper function to select from dropdown menu. Used stackoverflow
+    var selectDropdownbyNum = function ( element, optionNum ) {
+      if (optionNum){
+        var options = element.findElements(by.tagName('option'))
+          .then(function(options){
+            options[optionNum].click();
+          });
+      }
+    };
   var signout = function () {
     // Make sure user is signed out first
     browser.get('http://localhost:3000/authentication/signout');
@@ -667,9 +687,135 @@ describe('Users E2E Tests:', function () {
     });
   });
 
-  describe('Admin to project interaction', function() {
-    it('should successfully create a project', function(){
+  describe('Admins and creating a project', function() {
+    it('should report invalid entry into longitude',function (){
+      // Make sure user is signed out first
+      signout();
+      //signin as Admin
+      browser.get('http://localhost:3000/authentication/signin');
+      // Enter UserName
+      element(by.model('vm.credentials.usernameOrEmail')).sendKeys(user3.username);
+      // Enter Password
+      element(by.model('vm.credentials.password')).sendKeys(user3.password);
+      // Click Submit button
+      element(by.css('button[type="submit"]')).click();
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/');
+      //find list of current users
+      browser.get('http://localhost:3000/create');
+      //enter project Name
+      element(by.model('vm.userproject.name')).sendKeys(newProject1.name);
+      //enter address
+      element(by.model('vm.userproject.address')).sendKeys(newProject1.address);
+      //enter Description
+      element(by.model('vm.userproject.description')).sendKeys(newProject1.description);
+      //enter longitude
+      element(by.model('vm.userproject.longitude')).sendKeys(newProject1.description);
+      //enter latitude
+      element(by.model('vm.userproject.latitude')).sendKeys(newProject1.latitude);
+      //select project Type
+      expect(element(by.model('vm.userproject.projecttype')).$('option:checked').getText()).toEqual('Intersection');
+      //select current project progress
+      expect(element(by.model('vm.userproject.progress')).$('option:checked').getText()).toEqual('Proposed');
+      //enter image link
+      element(by.model('vm.userproject.imagelink')).sendKeys(newProject1.projImage);
+      //create project
+      element(by.css('button[type=submit]')).click();
+      //expect this to report an error
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/bad-request');
+    });
 
+    it('should report invalid entry into latitude', function() {
+      // Make sure user is signed out first
+      signout();
+      //signin as Admin
+      browser.get('http://localhost:3000/authentication/signin');
+      // Enter UserName
+      element(by.model('vm.credentials.usernameOrEmail')).sendKeys(user3.username);
+      // Enter Password
+      element(by.model('vm.credentials.password')).sendKeys(user3.password);
+      // Click Submit button
+      element(by.css('button[type="submit"]')).click();
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/');
+      //find list of current users
+      browser.get('http://localhost:3000/create');
+      //enter project Name
+      element(by.model('vm.userproject.name')).sendKeys(newProject1.name);
+      //enter address
+      element(by.model('vm.userproject.address')).sendKeys(newProject1.address);
+      //enter Description
+      element(by.model('vm.userproject.description')).sendKeys(newProject1.description);
+      //enter longitude
+      element(by.model('vm.userproject.longitude')).sendKeys(newProject1.longitude);
+      //enter latitude
+      element(by.model('vm.userproject.latitude')).sendKeys(newProject1.description);
+      //select project Type
+      expect(element(by.model('vm.userproject.projecttype')).$('option:checked').getText()).toEqual('Intersection');
+      //select current project progress
+      expect(element(by.model('vm.userproject.progress')).$('option:checked').getText()).toEqual('Proposed');
+      //enter image link
+      element(by.model('vm.userproject.imagelink')).sendKeys(newProject1.projImage);
+      //create project
+      element(by.css('button[type=submit]')).click();
+      //expect an error to be reported
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/bad-request');
+    });
+
+    it('should successfully create a project', function(){
+      // Make sure user is signed out first
+      signout();
+      //signin as Admin
+      browser.get('http://localhost:3000/authentication/signin');
+      // Enter UserName
+      element(by.model('vm.credentials.usernameOrEmail')).sendKeys(user3.username);
+      // Enter Password
+      element(by.model('vm.credentials.password')).sendKeys(user3.password);
+      // Click Submit button
+      element(by.css('button[type="submit"]')).click();
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/');
+      //find list of current users
+      browser.get('http://localhost:3000/create');
+      //enter project Name
+      element(by.model('vm.userproject.name')).sendKeys(newProject1.name);
+      //enter address
+      element(by.model('vm.userproject.address')).sendKeys(newProject1.address);
+      //enter Description
+      element(by.model('vm.userproject.description')).sendKeys(newProject1.description);
+      //enter longitude
+      element(by.model('vm.userproject.longitude')).sendKeys(newProject1.longitude);
+      //enter latitude
+      element(by.model('vm.userproject.latitude')).sendKeys(newProject1.latitude);
+      //select project Type
+      expect(element(by.model('vm.userproject.projecttype')).$('option:checked').getText()).toEqual('Intersection');
+      //select current project progress
+      expect(element(by.model('vm.userproject.progress')).$('option:checked').getText()).toEqual('Proposed');
+      //enter image link
+      element(by.model('vm.userproject.imagelink')).sendKeys(newProject1.projImage);
+      //Create project
+      element(by.css('button[type=submit]')).click();
     });
   });
 });
+
+
+/*
+ ******* declared earlier. using as reference ********
+  var newProject1 = {
+    name: 'testProject',
+    address: '1234 testing st',
+    description: 'this intersection is not real',
+    longitude: '-81.611738',
+    latitude: '30.3004161',
+    projType: 'Intersection',
+    progress: 'Proposed',
+    projImage: ''
+  }
+
+  var selectDropdownbyNum = function ( element, optionNum ) {
+    if (optionNum){
+      var options = element.findElements(by.tagName('option'))
+        .then(function(options){
+          options[optionNum].click();
+        });
+    }
+  };
+*/
