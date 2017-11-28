@@ -17,6 +17,14 @@ describe('Users E2E Tests:', function () {
     password: 'P@$$w0rd!!'
   };
 
+  var user3 = {
+    firstName: 'testing',
+    lastName: 'this',
+    email: 'testthis@mean.js',
+    username: 'testthisss',
+    password: 'P@$$w0rd!!'
+  };
+
   var signout = function () {
     // Make sure user is signed out first
     browser.get('http://localhost:3000/authentication/signout');
@@ -96,7 +104,7 @@ describe('Users E2E Tests:', function () {
      * However, 123@123@123 is an invalid email address.
      */
 
-    it('Should report invalid email address - "123@123@123"', function () {
+   it('Should report invalid email address - "123@123@123"', function () {
       browser.get('http://localhost:3000/authentication/signup');
       // Enter First Name
       element(by.model('vm.credentials.firstName')).sendKeys(user1.firstName);
@@ -549,4 +557,64 @@ describe('Users E2E Tests:', function () {
       expect(element.all(by.css('.ui-notification')).get(0).getText()).toBe('Password Changed Successfully');
     });
   });
+
+  describe('Admin abilities', function() {
+    it('should successfully change user roles', function (){
+      // Make sure user is signed out first
+      signout();
+      //signin as Admin
+      browser.get('http://localhost:3000/authentication/signin');
+      // Enter UserName
+      element(by.model('vm.credentials.usernameOrEmail')).sendKeys(user3.username);
+      // Enter Password
+      element(by.model('vm.credentials.password')).sendKeys(user3.password);
+      // Click Submit button
+      element(by.css('button[type="submit"]')).click();
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/');
+      //find list of current users
+      browser.get('http://localhost:3000/admin/users');
+      //locate test user 1 and click them
+      expect(element(by.binding('user.username')).getText()).toEqual(user1.username.toLowerCase());
+      element(by.binding('user.username')).click();
+      //confirm that edit button is visible/exists
+      expect(browser.isElementPresent(element(by.css('#editUser')))).toBe(true);
+      expect(element(by.css('#editUser')).isPresent()).toBe(true);
+      //click on edit user
+      element(by.css('#editUser')).click();
+      //check if switched to form
+      // Enter new role
+      element(by.model('vm.user.roles')).sendKeys('admin');
+      // Click Submit button
+      element(by.css('button[type=submit]')).click();
+
+    });
+
+    it('should be allowed to delete other users', function() {
+      // Make sure user is signed out first
+      signout();
+      //signin as Admin
+      browser.get('http://localhost:3000/authentication/signin');
+      // Enter UserName
+      element(by.model('vm.credentials.usernameOrEmail')).sendKeys(user3.username);
+      // Enter Password
+      element(by.model('vm.credentials.password')).sendKeys(user3.password);
+      // Click Submit button
+      element(by.css('button[type="submit"]')).click();
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/');
+      //find list of current users
+      browser.get('http://localhost:3000/admin/users');
+      //locate test user 1 and click them
+      expect(element(by.binding('user.username')).getText()).toEqual(user1.username.toLowerCase());
+      element(by.binding('user.username')).click();
+      //confirm that delete button is visible/exists
+      expect(browser.isElementPresent(element(by.css('#deleteUser')))).toBe(true);
+      expect(element(by.css('#deleteUser')).isPresent()).toBe(true);
+      //click on delete user
+      element(by.css('#deleteUser')).click();
+      //need to check if alert pops up, then click confirm
+      browser.switchTo().alert().accept();
+      //check if browser returns you to manage users page
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/admin/users');
+    });
+  })
 });
