@@ -558,7 +558,44 @@ describe('Users E2E Tests:', function () {
     });
   });
 
-  describe('Admin abilities', function() {
+  describe('Admin to user interaction', function() {
+    it('should report invalid role submission', function () {
+      // Make sure user is signed out first
+      signout();
+      //signin as Admin
+      browser.get('http://localhost:3000/authentication/signin');
+      // Enter UserName
+      element(by.model('vm.credentials.usernameOrEmail')).sendKeys(user3.username);
+      // Enter Password
+      element(by.model('vm.credentials.password')).sendKeys(user3.password);
+      // Click Submit button
+      element(by.css('button[type="submit"]')).click();
+      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/');
+      //find list of current users
+      browser.get('http://localhost:3000/admin/users');
+      //locate test user 1 and click them
+      expect(element(by.binding('user.username')).getText()).toEqual(user1.username.toLowerCase());
+      element(by.binding('user.username')).click().then(function() {
+        //making sure browser loads in button first
+        //-----------doesn't work ----------------
+        //browser.driver.sleep(1000);
+        //browser.waitForAngular();
+        //confirm that edit button is visible/exists
+        expect(browser.isElementPresent(element(by.id('editUser')))).toBe(true);
+        expect(element(by.id('editUser')).isPresent()).toBe(true);
+        //click on edit user
+        // ERROR: is not clickable at point (x,y). Other element would receive the click:
+        element(by.id('editUser')).click();
+        //check if switched to form
+        // Enter new role
+        element(by.model('vm.user.roles')).sendKeys('<3');
+        // Click Submit button
+        element(by.css('button[type=submit]')).click();
+        //report invalid submission
+        expect(element.all(by.css('.error-text')).get(0).getText()).toBe('At least one role is required.');
+      });
+    });
+
     it('should successfully change user roles', function (){
       // Make sure user is signed out first
       signout();
@@ -575,17 +612,23 @@ describe('Users E2E Tests:', function () {
       browser.get('http://localhost:3000/admin/users');
       //locate test user 1 and click them
       expect(element(by.binding('user.username')).getText()).toEqual(user1.username.toLowerCase());
-      element(by.binding('user.username')).click();
-      //confirm that edit button is visible/exists
-      expect(browser.isElementPresent(element(by.css('#editUser')))).toBe(true);
-      expect(element(by.css('#editUser')).isPresent()).toBe(true);
-      //click on edit user
-      element(by.css('#editUser')).click();
-      //check if switched to form
-      // Enter new role
-      element(by.model('vm.user.roles')).sendKeys('admin');
-      // Click Submit button
-      element(by.css('button[type=submit]')).click();
+      element(by.binding('user.username')).click().then(function () {
+        //making sure browser loads in button first
+        //  ------------doesn't work-----------
+        //browser.driver.sleep(1000);
+        //browser.waitForAngular();
+        //confirm that edit button is visible/exists
+        expect(browser.isElementPresent(element(by.id('editUser')))).toBe(true);
+        expect(element(by.id('editUser')).isPresent()).toBe(true);
+        //click on edit user
+        //ERROR: is not clickable at point (x,y). Other element would receive the click:
+        element(by.id('editUser')).click();
+        //check if switched to form
+        // Enter new role
+        element(by.model('vm.user.roles')).sendKeys('admin');
+        // Click Submit button
+        element(by.css('button[type=submit]')).click();
+      });
 
     });
 
@@ -605,16 +648,28 @@ describe('Users E2E Tests:', function () {
       browser.get('http://localhost:3000/admin/users');
       //locate test user 1 and click them
       expect(element(by.binding('user.username')).getText()).toEqual(user1.username.toLowerCase());
-      element(by.binding('user.username')).click();
-      //confirm that delete button is visible/exists
-      expect(browser.isElementPresent(element(by.css('#deleteUser')))).toBe(true);
-      expect(element(by.css('#deleteUser')).isPresent()).toBe(true);
-      //click on delete user
-      element(by.css('#deleteUser')).click();
-      //need to check if alert pops up, then click confirm
-      browser.switchTo().alert().accept();
-      //check if browser returns you to manage users page
-      expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/admin/users');
+      element(by.binding('user.username')).click().then(function () {
+        //making sure browser loads in button first
+        //----------doesn't work----------
+        //browser.driver.sleep(1000);
+        //browser.waitForAngular();
+        //confirm that delete button is visible/exists
+        expect(browser.isElementPresent(element(by.id('deleteUser')))).toBe(true);
+        expect(element(by.id('deleteUser')).isPresent()).toBe(true);
+        //click on delete user
+        // ERROR: is not clickable at point (x,y). Other element would receive the click:
+        element(by.id('deleteUser')).click();
+        //need to check if alert pops up, then click confirm
+        browser.switchTo().alert().accept();
+        //check if browser returns you to manage users page
+        expect(browser.getCurrentUrl()).toEqual('http://localhost:3000/admin/users');
+      });
     });
-  })
+  });
+
+  describe('Admin to project interaction', function() {
+    it('should successfully create a project', function(){
+
+    });
+  });
 });
