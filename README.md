@@ -22,6 +22,7 @@ As a user, this app contains the following features:
 		- A twitter widget to display in real time tweets with the hashtag "Rural Safety" (hashtag can be changed to display tweets with a different hashtag within code in modules/core/client/views/home.client.view.html)
 		- A carousel of sliding images related to the Transportation Safety Center, UF, and road safety (images can be changed through image links in the code within modules/core/client/controllers/home.client.controller.js)
 		- An About Us textbox which holds static information in 2 paragraphs (can be edited within the code at modules/core/client/views/home.client.view.html) 
+		![image](https://user-images.githubusercontent.com/31355658/33529996-c76e2a7e-d846-11e7-9cea-c3eb531bb765.png)
 
 	- An About Us Page with:
 		- Static information and photo (can be edited at modules/aboutus/client/views/list-aboutus.client.view.html)
