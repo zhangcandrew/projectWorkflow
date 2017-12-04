@@ -43,7 +43,7 @@ var UserprojectSchema = new Schema({
     projecttype: {
     type: String,
     default: '',
-    required: 'Please select your projects current progress',
+    required: 'Please select your projects type',
     trim: true
   },
     progress: {
